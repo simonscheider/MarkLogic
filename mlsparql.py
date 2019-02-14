@@ -13,7 +13,7 @@ import requests
 from requests import auth
 import json
 import pandas as pd
-import rdflib
+#import rdflib
 
 
 
@@ -67,7 +67,7 @@ def queryforRDF(query, format = 'turtle'):
 
 
 
-""""Firing SPARQL updates against Mark Logic. Creates a new document each time in the graph specified in the update statement. Danger: redundancy """
+""""Firing SPARQL updates against Mark Logic. Inserts Creates a new document each time in the graph specified in the update statement. Danger: redundancy """
 def update(update, format = 'rdf+xml', permissions=None):
     if format == 'rdf+xml':
         headers = {'Content-type': 'application/x-www-form-urlencoded', 'Accept':'application/rdf+xml'}
