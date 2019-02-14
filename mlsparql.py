@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:       mlsparql
-# Purpose:      To access and query MarkLogic server
+# Purpose:     Scripts for accessing and querying the MarkLogic server
 #
 # Author:      Schei008
 #
@@ -81,6 +81,12 @@ def update(update, format = 'rdf+xml', permissions=None):
     return results
 
 
+def getlistofgraphs():
+    #Does not work!!
+    headers = {'Content-type': 'application/x-www-form-urlencoded', 'Accept':'application/rdf+xml'}
+    results = requests.post(url='http://localhost:8000/v1/things',  auth=me)
+    print results
+    print results.text
 
 
 
@@ -99,8 +105,8 @@ def main():
     #with open('example.rq', 'r') as f:
     #query=f.read()
 
-    print selectquery
-    print queryforDF(selectquery)
+    #print selectquery
+    #print queryforDF(selectquery)
 
     describequery = prefixes +''' DESCRIBE ?a \
         WHERE {\
@@ -108,8 +114,8 @@ def main():
         ?a rdfs:subClassOf onto:Place.\
         ?a rdfs:label ?l.\
         } LIMIT 10'''
-    print describequery
-    print queryforRDF(describequery)
+    #print describequery
+    #print queryforRDF(describequery)
 
     insert = prefixes +''' INSERT DATA \
         {\
@@ -118,11 +124,13 @@ def main():
         <http://example./book/> dc:title "ExampleBook"
         }\
         } '''
-    print insert
-    print update(insert)
+    #print insert
+    #print update(insert)
 
-    emptygraph =prefixes +'''CLEAR GRAPH <examplegraph> '''
-    print update(emptygraph)
+    #emptygraph =prefixes +'''CLEAR GRAPH <examplegraph> '''
+    #print update(emptygraph)
+
+    getlistofgraphs()
 
 
 
