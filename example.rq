@@ -1,0 +1,12 @@
+PREFIX db: <http://dbpedia.org/resource/>
+PREFIX onto: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cts: <http://marklogic.com/cts#>
+
+SELECT DISTINCT ?a 
+WHERE { ?a a owl:Class.
+       ?a rdfs:subClassOf onto:Place.  
+       ?a rdfs:label ?l.        
+       FILTER( cts:contains(?l, 'straat'))
+      } LIMIT 10
