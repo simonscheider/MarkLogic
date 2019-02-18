@@ -31,12 +31,14 @@ def setPrefixes(graph):
 
 #see https://taginfo.openstreetmap.org/tags
 objectfilter = [{'key':'building', 'value': 'all'},
-{'key':'natural', 'value': 'tree'},
+{'key':'natural', 'value': 'tree'}, {'key': 'natural', 'value': 'peak'}, {'key': 'natural', 'value': 'spring'},
 {'key':'waterway', 'value': 'all'},
 {'key':'power', 'value': 'all'},
 {'key':'barrier', 'value': 'all'},
 {'key':'amenity', 'value': 'all'}
 ]
+
+objectattributefilter = ['name'] #If something has a unique name, then its likely to be an object
 
 networkfilter= [
 {'key': 'highway', 'value': 'residential'}, {'key': 'highway', 'value': 'service'}, {'key': 'highway', 'value': 'track'},
@@ -48,7 +50,7 @@ networkfilter= [
 ]
 
 fieldfilter = [
-{'key': 'natural', 'value': '-tree'},
+{'key': 'natural', 'value': ['tree', 'peak', 'spring']}, #This is how 'negation' is encoded!
 {'key': 'landuse', 'value': 'all'}
 ]
 
@@ -56,7 +58,7 @@ fieldfilter = [
 def filter(key, value, filterlist):
     for f in filterlist:
         if f['key'] == key:
-            if f['value'][0]=="-" and f['value'][1:] != value:
+            if isinstance(f['value'], list) and value not in f['value']: #Handling negations
                 return True
             elif f['value']=="all":
                 return True
@@ -81,42 +83,36 @@ def getPopularTagsasRDF():
         cw = t['count_ways']
         cr = t['count_relations']
         cn = t['count_nodes']
+        attr = getAttributes(key,value)
+        geometrytypes = []
         if  len(value)<30 and len(key)<30:
-            if filter(key,value,objectfilter):
+            if filter(key,value,objectfilter) or 'name' in attr:
                 count+=1
-                attr = getAttribute(key,value)
-                geometrytypes = []
                 if cn > 100:
-                    geometrytypes.append('point')
+                    geometrytypes.append('point') #This needs to be improved to know how often a way is a polygon or not.
                 if cw > 100 or  cr  > 100:
                     geometrytypes.append('region')
-                constructRDF(graph, key, value,cw,cr,cn, geometrytypes, attr, ccd.ObjectVector)
+                constructObjectRDF(graph, key, value,cw,cr,cn, geometrytypes, attr)
             if filter(key,value,networkfilter):
                 count+=1
-                attr = getAttribute(key,value)
-                geometrytypes = []
                 if cn > 100:
                     geometrytypes.append('point')
                 if cw > 100:
                     geometrytypes.append('line')
-                constructRDF(graph, key, value,cw,cr,cn, geometrytypes, attr, ccd.NetworkVector)
+                constructNetworkRDF(graph, key, value,cw,cr,cn, geometrytypes, attr)
             if filter(key,value,fieldfilter):
                 count+=1
-                attr = getAttribute(key,value)
-                geometrytypes = []
                 if cn > 100:
                     geometrytypes.append('point')
                 if cw > 100:
                     geometrytypes.append('region')
-                constructRDF(graph, key, value,cw,cr,cn, geometrytypes, attr, ccd.Coverage)
-
-
+                constructFieldRDF(graph, key, value,cw,cr,cn, geometrytypes, attr)
             if count == 40:
                 break
     graph.serialize(destination='OSMTypes.ttl',format='turtle')
 
 
-def getAttribute(key,value):
+def getAttributes(key,value):
     url = "https://taginfo.openstreetmap.org/api/4/tag/combinations?key="+key+"&value="+value+"&sortname=together_count&sortorder=desc"
     results = requests.get(url=url)
     #with open("poposmtags.json", "w") as write_file:
@@ -137,25 +133,65 @@ def getAttribute(key,value):
         attr = ["A"]
     return attr
 
-def constructRDF(graph, key, value,cw,cr,cn, geometrytypes, attr, ccdd):
-    for t in geometrytypes:
+
+def constructFieldRDF(graph, key, value,cw,cr,cn, geometrytypes, attr):
+     attr.append(key) #the key at the same time denotes the field attribute that holds the field values
+     for t in geometrytypes:
         for a in attr:
             if t == 'point' :
                 gdt = ccd.PointDataSet
+                ccdd = ccd.PointMeasures
             if t == 'region':
                 gdt = ccd.RegionDataSet
+                ccdd = ccd.Coverage
+            constructRDF(graph, key, value,cw,cr,cn, gdt, a, t, ccdd)
+
+
+def constructObjectRDF(graph, key, value,cw,cr,cn, geometrytypes, attr):
+     for t in geometrytypes:
+        for a in attr:
+            if t == 'point' :
+                gdt = ccd.PointDataSet
+                ccdd = ccd.ObjectVector
+            if t == 'region':
+                gdt = ccd.RegionDataSet
+                ccdd = ccd.ObjectVector
+            constructRDF(graph, key, value,cw,cr,cn, gdt, a, t, ccdd)
+
+def constructNetworkRDF(graph, key, value,cw,cr,cn, geometrytypes, attr):
+     for t in geometrytypes:
+        for a in attr:
+            if t == 'point' :
+                gdt = ccd.PointDataSet
+                ccdd = ccd.NetworkVector
             if t == 'line':
                 gdt = ccd.LineDataSet
-            graph.add(( osmtypes[key+"-"+value+"-"+t+"-"+a], RDF.type, RDFS.Class))
-            graph.add(( osmtypes[key+"-"+value+"-"+t+"-"+a], RDFS.label, Literal("OSM " +key.replace("_", " ")+" "+value.replace("_", " ")+" " +t+" "+a)))
-            graph.add(( osmtypes[key+"-"+value+"-"+t+"-"+a], RDFS.subClassOf,ccdd))
+                ccdd = ccd.NetworkVector
+            constructRDF(graph, key, value,cw,cr,cn, gdt, a, t, ccdd)
+
+def constructRDF(graph, key, value,cw,cr,cn, gdt, a, t, ccdd):
+            graph.add(( osmtypes[key+"-"+value+"-"+t+"-"+a], RDFS.label, Literal("OSM attribute "+a +" of " +key.replace("_", " ")+" "+value.replace("_", " ") +" "+t)))
+            graph.add(( osmtypes[key+"-"+value+"-"+t+"-"+a], RDF.type,ccdd))
             graph.add((osmtypes[key+"-"+value+"-"+t+"-"+a],ccd.ofDataSet,  osmtypes[key+"-"+value+"-"+t]))
-            graph.add((osmtypes[key+"-"+value+"-"+t], RDFS.subClassOf,  gdt))
-            graph.add(( osmtypes[key+"-"+value+"-"+t], RDFS.label, Literal("OSM " +key+" "+value+" " +t)))
-            graph.add(( osmtypes[key+"-"+value+"-"+t], RDFS.subClassOf,osmtypes[key+"-"+value]))
-            graph.add(( osmtypes[key+"-"+value], RDFS.label, Literal("OSM " +key+" "+value)))
+            graph.add((osmtypes[key+"-"+value+"-"+t], RDF.type,  gdt))
+            graph.add(( osmtypes[key+"-"+value+"-"+t], RDFS.label, Literal("OSM data set " +key.replace("_", " ")+" "+value.replace("_", " ")+" " +t)))
+            graph.add(( osmtypes[key+"-"+value+"-"+t], RDF.type,osmtypes[key+"-"+value]))
+            graph.add((osmtypes[key+"-"+value], RDF.type, RDFS.Class))
+            graph.add(( osmtypes[key+"-"+value], RDFS.label, Literal("OSM type " +key+" "+value)))
+            graph.add(( osmtypes[key+"-"+value],RDFS.comment, Literal(getkeyvalueDescription(key, value))))
+            graph.add((osmtypes[key+"-"+value], RDFS.subClassOf, osmtypes[key]))
+            graph.add(( osmtypes[key], RDFS.label, Literal("OSM type " +key)))
 
 
+
+def getkeyvalueDescription(key, value, lang='en'):
+    url = "https://taginfo.openstreetmap.org/api/4/tag/wiki_pages?key="+key+"&value="+value
+    results = requests.get(url=url)
+    res = results.json()
+    for i in res['data']:
+        if i['lang']==lang:
+            return i['description']
+            break
 
 
 

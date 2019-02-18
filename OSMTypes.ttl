@@ -6,1641 +6,1568 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-osmt:amenity-bench-point-backrest a rdfs:Class ;
-    rdfs:label "OSM amenity bench point backrest" ;
-    ccd:ofDataSet osmt:amenity-bench-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-bench-point-material a rdfs:Class ;
-    rdfs:label "OSM amenity bench point material" ;
-    ccd:ofDataSet osmt:amenity-bench-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-bench-region-backrest a rdfs:Class ;
-    rdfs:label "OSM amenity bench region backrest" ;
-    ccd:ofDataSet osmt:amenity-bench-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-bench-region-material a rdfs:Class ;
-    rdfs:label "OSM amenity bench region material" ;
-    ccd:ofDataSet osmt:amenity-bench-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-point-access a rdfs:Class ;
-    rdfs:label "OSM amenity parking point access" ;
-    ccd:ofDataSet osmt:amenity-parking-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-point-fee a rdfs:Class ;
-    rdfs:label "OSM amenity parking point fee" ;
-    ccd:ofDataSet osmt:amenity-parking-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-point-parking a rdfs:Class ;
-    rdfs:label "OSM amenity parking point parking" ;
-    ccd:ofDataSet osmt:amenity-parking-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-region-access a rdfs:Class ;
-    rdfs:label "OSM amenity parking region access" ;
-    ccd:ofDataSet osmt:amenity-parking-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-region-fee a rdfs:Class ;
-    rdfs:label "OSM amenity parking region fee" ;
-    ccd:ofDataSet osmt:amenity-parking-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-parking-region-parking a rdfs:Class ;
-    rdfs:label "OSM amenity parking region parking" ;
-    ccd:ofDataSet osmt:amenity-parking-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-point-building a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship point building" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-point-name a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship point name" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-point-religion a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship point religion" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-region-building a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship region building" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-region-name a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship region name" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-place_of_worship-region-religion a rdfs:Class ;
-    rdfs:label "OSM amenity place of worship region religion" ;
-    ccd:ofDataSet osmt:amenity-place_of_worship-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-restaurant-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant point addr:housenumber" ;
-    ccd:ofDataSet osmt:amenity-restaurant-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-restaurant-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant point addr:street" ;
-    ccd:ofDataSet osmt:amenity-restaurant-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-restaurant-point-cuisine a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant point cuisine" ;
-    ccd:ofDataSet osmt:amenity-restaurant-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-restaurant-point-name a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant point name" ;
-    ccd:ofDataSet osmt:amenity-restaurant-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-restaurant-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant region addr:housenumber" ;
-    ccd:ofDataSet osmt:amenity-restaurant-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-restaurant-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant region addr:street" ;
-    ccd:ofDataSet osmt:amenity-restaurant-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-restaurant-region-cuisine a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant region cuisine" ;
-    ccd:ofDataSet osmt:amenity-restaurant-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-restaurant-region-name a rdfs:Class ;
-    rdfs:label "OSM amenity restaurant region name" ;
-    ccd:ofDataSet osmt:amenity-restaurant-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-school-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM amenity school point addr:city" ;
-    ccd:ofDataSet osmt:amenity-school-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-school-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM amenity school point addr:street" ;
-    ccd:ofDataSet osmt:amenity-school-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-school-point-name a rdfs:Class ;
-    rdfs:label "OSM amenity school point name" ;
-    ccd:ofDataSet osmt:amenity-school-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-school-point-source a rdfs:Class ;
-    rdfs:label "OSM amenity school point source" ;
-    ccd:ofDataSet osmt:amenity-school-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-school-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM amenity school region addr:city" ;
-    ccd:ofDataSet osmt:amenity-school-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#amenity-school-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM amenity school region addr:street" ;
-    ccd:ofDataSet osmt:amenity-school-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-school-region-name a rdfs:Class ;
-    rdfs:label "OSM amenity school region name" ;
-    ccd:ofDataSet osmt:amenity-school-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:amenity-school-region-source a rdfs:Class ;
-    rdfs:label "OSM amenity school region source" ;
-    ccd:ofDataSet osmt:amenity-school-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-point-fence_type a rdfs:Class ;
-    rdfs:label "OSM barrier fence point fence_type" ;
-    ccd:ofDataSet osmt:barrier-fence-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-point-landuse a rdfs:Class ;
-    rdfs:label "OSM barrier fence point landuse" ;
-    ccd:ofDataSet osmt:barrier-fence-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-point-source a rdfs:Class ;
-    rdfs:label "OSM barrier fence point source" ;
-    ccd:ofDataSet osmt:barrier-fence-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-region-fence_type a rdfs:Class ;
-    rdfs:label "OSM barrier fence region fence_type" ;
-    ccd:ofDataSet osmt:barrier-fence-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-region-landuse a rdfs:Class ;
-    rdfs:label "OSM barrier fence region landuse" ;
-    ccd:ofDataSet osmt:barrier-fence-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-fence-region-source a rdfs:Class ;
-    rdfs:label "OSM barrier fence region source" ;
-    ccd:ofDataSet osmt:barrier-fence-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-point-access a rdfs:Class ;
-    rdfs:label "OSM barrier gate point access" ;
-    ccd:ofDataSet osmt:barrier-gate-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-point-bicycle a rdfs:Class ;
-    rdfs:label "OSM barrier gate point bicycle" ;
-    ccd:ofDataSet osmt:barrier-gate-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-point-foot a rdfs:Class ;
-    rdfs:label "OSM barrier gate point foot" ;
-    ccd:ofDataSet osmt:barrier-gate-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-region-access a rdfs:Class ;
-    rdfs:label "OSM barrier gate region access" ;
-    ccd:ofDataSet osmt:barrier-gate-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-region-bicycle a rdfs:Class ;
-    rdfs:label "OSM barrier gate region bicycle" ;
-    ccd:ofDataSet osmt:barrier-gate-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-gate-region-foot a rdfs:Class ;
-    rdfs:label "OSM barrier gate region foot" ;
-    ccd:ofDataSet osmt:barrier-gate-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-hedge-point-area a rdfs:Class ;
-    rdfs:label "OSM barrier hedge point area" ;
-    ccd:ofDataSet osmt:barrier-hedge-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-hedge-point-source a rdfs:Class ;
-    rdfs:label "OSM barrier hedge point source" ;
-    ccd:ofDataSet osmt:barrier-hedge-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-hedge-region-area a rdfs:Class ;
-    rdfs:label "OSM barrier hedge region area" ;
-    ccd:ofDataSet osmt:barrier-hedge-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-hedge-region-source a rdfs:Class ;
-    rdfs:label "OSM barrier hedge region source" ;
-    ccd:ofDataSet osmt:barrier-hedge-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-wall-point-source a rdfs:Class ;
-    rdfs:label "OSM barrier wall point source" ;
-    ccd:ofDataSet osmt:barrier-wall-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-wall-point-wall a rdfs:Class ;
-    rdfs:label "OSM barrier wall point wall" ;
-    ccd:ofDataSet osmt:barrier-wall-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-wall-region-source a rdfs:Class ;
-    rdfs:label "OSM barrier wall region source" ;
-    ccd:ofDataSet osmt:barrier-wall-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:barrier-wall-region-wall a rdfs:Class ;
-    rdfs:label "OSM barrier wall region wall" ;
-    ccd:ofDataSet osmt:barrier-wall-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building apartments point addr:city" ;
-    ccd:ofDataSet osmt:building-apartments-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building apartments point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-apartments-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building apartments point addr:street" ;
-    ccd:ofDataSet osmt:building-apartments-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-building:levels> a rdfs:Class ;
-    rdfs:label "OSM building apartments point building:levels" ;
-    ccd:ofDataSet osmt:building-apartments-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building apartments region addr:city" ;
-    ccd:ofDataSet osmt:building-apartments-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building apartments region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-apartments-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building apartments region addr:street" ;
-    ccd:ofDataSet osmt:building-apartments-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-building:levels> a rdfs:Class ;
-    rdfs:label "OSM building apartments region building:levels" ;
-    ccd:ofDataSet osmt:building-apartments-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building commercial point addr:city" ;
-    ccd:ofDataSet osmt:building-commercial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building commercial point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-commercial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building commercial point addr:street" ;
-    ccd:ofDataSet osmt:building-commercial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-commercial-point-name a rdfs:Class ;
-    rdfs:label "OSM building commercial point name" ;
-    ccd:ofDataSet osmt:building-commercial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building commercial region addr:city" ;
-    ccd:ofDataSet osmt:building-commercial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building commercial region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-commercial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-commercial-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building commercial region addr:street" ;
-    ccd:ofDataSet osmt:building-commercial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-commercial-region-name a rdfs:Class ;
-    rdfs:label "OSM building commercial region name" ;
-    ccd:ofDataSet osmt:building-commercial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building detached point addr:city" ;
-    ccd:ofDataSet osmt:building-detached-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building detached point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-detached-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:postcode> a rdfs:Class ;
-    rdfs:label "OSM building detached point addr:postcode" ;
-    ccd:ofDataSet osmt:building-detached-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building detached point addr:street" ;
-    ccd:ofDataSet osmt:building-detached-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building detached region addr:city" ;
-    ccd:ofDataSet osmt:building-detached-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building detached region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-detached-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:postcode> a rdfs:Class ;
-    rdfs:label "OSM building detached region addr:postcode" ;
-    ccd:ofDataSet osmt:building-detached-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building detached region addr:street" ;
-    ccd:ofDataSet osmt:building-detached-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-point-building:ruian:type> a rdfs:Class ;
-    rdfs:label "OSM building garage point building:ruian:type" ;
-    ccd:ofDataSet osmt:building-garage-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-point-ref:ruian:building> a rdfs:Class ;
-    rdfs:label "OSM building garage point ref:ruian:building" ;
-    ccd:ofDataSet osmt:building-garage-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-garage-point-source a rdfs:Class ;
-    rdfs:label "OSM building garage point source" ;
-    ccd:ofDataSet osmt:building-garage-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-region-building:ruian:type> a rdfs:Class ;
-    rdfs:label "OSM building garage region building:ruian:type" ;
-    ccd:ofDataSet osmt:building-garage-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-region-ref:ruian:building> a rdfs:Class ;
-    rdfs:label "OSM building garage region ref:ruian:building" ;
-    ccd:ofDataSet osmt:building-garage-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-garage-region-source a rdfs:Class ;
-    rdfs:label "OSM building garage region source" ;
-    ccd:ofDataSet osmt:building-garage-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building house point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-house-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building house point addr:street" ;
-    ccd:ofDataSet osmt:building-house-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-house-point-source a rdfs:Class ;
-    rdfs:label "OSM building house point source" ;
-    ccd:ofDataSet osmt:building-house-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-house-point-start_date a rdfs:Class ;
-    rdfs:label "OSM building house point start_date" ;
-    ccd:ofDataSet osmt:building-house-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building house region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-house-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building house region addr:street" ;
-    ccd:ofDataSet osmt:building-house-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-house-region-source a rdfs:Class ;
-    rdfs:label "OSM building house region source" ;
-    ccd:ofDataSet osmt:building-house-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-house-region-start_date a rdfs:Class ;
-    rdfs:label "OSM building house region start_date" ;
-    ccd:ofDataSet osmt:building-house-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-hut-point-height a rdfs:Class ;
-    rdfs:label "OSM building hut point height" ;
-    ccd:ofDataSet osmt:building-hut-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-hut-point-it:fvg:ctrn:code> a rdfs:Class ;
-    rdfs:label "OSM building hut point it:fvg:ctrn:code" ;
-    ccd:ofDataSet osmt:building-hut-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-hut-point-it:fvg:ctrn:revision> a rdfs:Class ;
-    rdfs:label "OSM building hut point it:fvg:ctrn:revision" ;
-    ccd:ofDataSet osmt:building-hut-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-hut-point-source a rdfs:Class ;
-    rdfs:label "OSM building hut point source" ;
-    ccd:ofDataSet osmt:building-hut-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-hut-region-height a rdfs:Class ;
-    rdfs:label "OSM building hut region height" ;
-    ccd:ofDataSet osmt:building-hut-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-hut-region-it:fvg:ctrn:code> a rdfs:Class ;
-    rdfs:label "OSM building hut region it:fvg:ctrn:code" ;
-    ccd:ofDataSet osmt:building-hut-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-hut-region-it:fvg:ctrn:revision> a rdfs:Class ;
-    rdfs:label "OSM building hut region it:fvg:ctrn:revision" ;
-    ccd:ofDataSet osmt:building-hut-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-hut-region-source a rdfs:Class ;
-    rdfs:label "OSM building hut region source" ;
-    ccd:ofDataSet osmt:building-hut-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-industrial-point-ref:bag> a rdfs:Class ;
-    rdfs:label "OSM building industrial point ref:bag" ;
-    ccd:ofDataSet osmt:building-industrial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-industrial-point-source a rdfs:Class ;
-    rdfs:label "OSM building industrial point source" ;
-    ccd:ofDataSet osmt:building-industrial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-industrial-point-source:date> a rdfs:Class ;
-    rdfs:label "OSM building industrial point source:date" ;
-    ccd:ofDataSet osmt:building-industrial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-industrial-point-start_date a rdfs:Class ;
-    rdfs:label "OSM building industrial point start_date" ;
-    ccd:ofDataSet osmt:building-industrial-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-industrial-region-ref:bag> a rdfs:Class ;
-    rdfs:label "OSM building industrial region ref:bag" ;
-    ccd:ofDataSet osmt:building-industrial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-industrial-region-source a rdfs:Class ;
-    rdfs:label "OSM building industrial region source" ;
-    ccd:ofDataSet osmt:building-industrial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-industrial-region-source:date> a rdfs:Class ;
-    rdfs:label "OSM building industrial region source:date" ;
-    ccd:ofDataSet osmt:building-industrial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-industrial-region-start_date a rdfs:Class ;
-    rdfs:label "OSM building industrial region start_date" ;
-    ccd:ofDataSet osmt:building-industrial-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building residential point addr:city" ;
-    ccd:ofDataSet osmt:building-residential-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building residential point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-residential-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building residential point addr:street" ;
-    ccd:ofDataSet osmt:building-residential-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-residential-point-source a rdfs:Class ;
-    rdfs:label "OSM building residential point source" ;
-    ccd:ofDataSet osmt:building-residential-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building residential region addr:city" ;
-    ccd:ofDataSet osmt:building-residential-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building residential region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-residential-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building residential region addr:street" ;
-    ccd:ofDataSet osmt:building-residential-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-residential-region-source a rdfs:Class ;
-    rdfs:label "OSM building residential region source" ;
-    ccd:ofDataSet osmt:building-residential-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-roof-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building roof point addr:city" ;
-    ccd:ofDataSet osmt:building-roof-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-point-amenity a rdfs:Class ;
-    rdfs:label "OSM building roof point amenity" ;
-    ccd:ofDataSet osmt:building-roof-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-point-layer a rdfs:Class ;
-    rdfs:label "OSM building roof point layer" ;
-    ccd:ofDataSet osmt:building-roof-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-point-source a rdfs:Class ;
-    rdfs:label "OSM building roof point source" ;
-    ccd:ofDataSet osmt:building-roof-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-roof-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building roof region addr:city" ;
-    ccd:ofDataSet osmt:building-roof-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-region-amenity a rdfs:Class ;
-    rdfs:label "OSM building roof region amenity" ;
-    ccd:ofDataSet osmt:building-roof-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-region-layer a rdfs:Class ;
-    rdfs:label "OSM building roof region layer" ;
-    ccd:ofDataSet osmt:building-roof-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-roof-region-source a rdfs:Class ;
-    rdfs:label "OSM building roof region source" ;
-    ccd:ofDataSet osmt:building-roof-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-point-building:levels> a rdfs:Class ;
-    rdfs:label "OSM building shed point building:levels" ;
-    ccd:ofDataSet osmt:building-shed-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-shed-point-source a rdfs:Class ;
-    rdfs:label "OSM building shed point source" ;
-    ccd:ofDataSet osmt:building-shed-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-point-source:geometry:date> a rdfs:Class ;
-    rdfs:label "OSM building shed point source:geometry:date" ;
-    ccd:ofDataSet osmt:building-shed-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-point-source:geometry:oidn> a rdfs:Class ;
-    rdfs:label "OSM building shed point source:geometry:oidn" ;
-    ccd:ofDataSet osmt:building-shed-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-region-building:levels> a rdfs:Class ;
-    rdfs:label "OSM building shed region building:levels" ;
-    ccd:ofDataSet osmt:building-shed-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-shed-region-source a rdfs:Class ;
-    rdfs:label "OSM building shed region source" ;
-    ccd:ofDataSet osmt:building-shed-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-region-source:geometry:date> a rdfs:Class ;
-    rdfs:label "OSM building shed region source:geometry:date" ;
-    ccd:ofDataSet osmt:building-shed-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-shed-region-source:geometry:oidn> a rdfs:Class ;
-    rdfs:label "OSM building shed region source:geometry:oidn" ;
-    ccd:ofDataSet osmt:building-shed-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building yes point addr:city" ;
-    ccd:ofDataSet osmt:building-yes-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building yes point addr:housenumber" ;
-    ccd:ofDataSet osmt:building-yes-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building yes point addr:street" ;
-    ccd:ofDataSet osmt:building-yes-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-yes-point-source a rdfs:Class ;
-    rdfs:label "OSM building yes point source" ;
-    ccd:ofDataSet osmt:building-yes-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:city> a rdfs:Class ;
-    rdfs:label "OSM building yes region addr:city" ;
-    ccd:ofDataSet osmt:building-yes-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:housenumber> a rdfs:Class ;
-    rdfs:label "OSM building yes region addr:housenumber" ;
-    ccd:ofDataSet osmt:building-yes-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:street> a rdfs:Class ;
-    rdfs:label "OSM building yes region addr:street" ;
-    ccd:ofDataSet osmt:building-yes-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:building-yes-region-source a rdfs:Class ;
-    rdfs:label "OSM building yes region source" ;
-    ccd:ofDataSet osmt:building-yes-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:highway-residential-line-name a rdfs:Class ;
-    rdfs:label "OSM highway residential line name" ;
-    ccd:ofDataSet osmt:highway-residential-line ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-osmt:highway-residential-line-source a rdfs:Class ;
-    rdfs:label "OSM highway residential line source" ;
-    ccd:ofDataSet osmt:highway-residential-line ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-line-tiger:cfcc> a rdfs:Class ;
-    rdfs:label "OSM highway residential line tiger:cfcc" ;
-    ccd:ofDataSet osmt:highway-residential-line ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-line-tiger:county> a rdfs:Class ;
-    rdfs:label "OSM highway residential line tiger:county" ;
-    ccd:ofDataSet osmt:highway-residential-line ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-osmt:highway-residential-point-name a rdfs:Class ;
-    rdfs:label "OSM highway residential point name" ;
-    ccd:ofDataSet osmt:highway-residential-point ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-osmt:highway-residential-point-source a rdfs:Class ;
-    rdfs:label "OSM highway residential point source" ;
-    ccd:ofDataSet osmt:highway-residential-point ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-point-tiger:cfcc> a rdfs:Class ;
-    rdfs:label "OSM highway residential point tiger:cfcc" ;
-    ccd:ofDataSet osmt:highway-residential-point ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-point-tiger:county> a rdfs:Class ;
-    rdfs:label "OSM highway residential point tiger:county" ;
-    ccd:ofDataSet osmt:highway-residential-point ;
-    rdfs:subClassOf ccd:NetworkVector .
-
-osmt:landuse-farmland-point-ref a rdfs:Class ;
-    rdfs:label "OSM landuse farmland point ref" ;
-    ccd:ofDataSet osmt:landuse-farmland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmland-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse farmland point source" ;
-    ccd:ofDataSet osmt:landuse-farmland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmland-point-type a rdfs:Class ;
-    rdfs:label "OSM landuse farmland point type" ;
-    ccd:ofDataSet osmt:landuse-farmland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmland-region-ref a rdfs:Class ;
-    rdfs:label "OSM landuse farmland region ref" ;
-    ccd:ofDataSet osmt:landuse-farmland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmland-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse farmland region source" ;
-    ccd:ofDataSet osmt:landuse-farmland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmland-region-type a rdfs:Class ;
-    rdfs:label "OSM landuse farmland region type" ;
-    ccd:ofDataSet osmt:landuse-farmland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-point-name a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard point name" ;
-    ccd:ofDataSet osmt:landuse-farmyard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard point source" ;
-    ccd:ofDataSet osmt:landuse-farmyard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-point-type a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard point type" ;
-    ccd:ofDataSet osmt:landuse-farmyard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-region-name a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard region name" ;
-    ccd:ofDataSet osmt:landuse-farmyard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard region source" ;
-    ccd:ofDataSet osmt:landuse-farmyard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-farmyard-region-type a rdfs:Class ;
-    rdfs:label "OSM landuse farmyard region type" ;
-    ccd:ofDataSet osmt:landuse-farmyard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-point-leaf_type a rdfs:Class ;
-    rdfs:label "OSM landuse forest point leaf_type" ;
-    ccd:ofDataSet osmt:landuse-forest-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse forest point source" ;
-    ccd:ofDataSet osmt:landuse-forest-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-point-type a rdfs:Class ;
-    rdfs:label "OSM landuse forest point type" ;
-    ccd:ofDataSet osmt:landuse-forest-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-region-leaf_type a rdfs:Class ;
-    rdfs:label "OSM landuse forest region leaf_type" ;
-    ccd:ofDataSet osmt:landuse-forest-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse forest region source" ;
-    ccd:ofDataSet osmt:landuse-forest-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-forest-region-type a rdfs:Class ;
-    rdfs:label "OSM landuse forest region type" ;
-    ccd:ofDataSet osmt:landuse-forest-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-point-golf a rdfs:Class ;
-    rdfs:label "OSM landuse grass point golf" ;
-    ccd:ofDataSet osmt:landuse-grass-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse grass point source" ;
-    ccd:ofDataSet osmt:landuse-grass-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-point-type a rdfs:Class ;
-    rdfs:label "OSM landuse grass point type" ;
-    ccd:ofDataSet osmt:landuse-grass-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-region-golf a rdfs:Class ;
-    rdfs:label "OSM landuse grass region golf" ;
-    ccd:ofDataSet osmt:landuse-grass-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse grass region source" ;
-    ccd:ofDataSet osmt:landuse-grass-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-grass-region-type a rdfs:Class ;
-    rdfs:label "OSM landuse grass region type" ;
-    ccd:ofDataSet osmt:landuse-grass-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-point-meadow a rdfs:Class ;
-    rdfs:label "OSM landuse meadow point meadow" ;
-    ccd:ofDataSet osmt:landuse-meadow-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-point-ref a rdfs:Class ;
-    rdfs:label "OSM landuse meadow point ref" ;
-    ccd:ofDataSet osmt:landuse-meadow-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse meadow point source" ;
-    ccd:ofDataSet osmt:landuse-meadow-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-region-meadow a rdfs:Class ;
-    rdfs:label "OSM landuse meadow region meadow" ;
-    ccd:ofDataSet osmt:landuse-meadow-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-region-ref a rdfs:Class ;
-    rdfs:label "OSM landuse meadow region ref" ;
-    ccd:ofDataSet osmt:landuse-meadow-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-meadow-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse meadow region source" ;
-    ccd:ofDataSet osmt:landuse-meadow-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#landuse-orchard-point-raba:id> a rdfs:Class ;
-    rdfs:label "OSM landuse orchard point raba:id" ;
-    ccd:ofDataSet osmt:landuse-orchard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-orchard-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse orchard point source" ;
-    ccd:ofDataSet osmt:landuse-orchard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#landuse-orchard-point-source:date> a rdfs:Class ;
-    rdfs:label "OSM landuse orchard point source:date" ;
-    ccd:ofDataSet osmt:landuse-orchard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-orchard-point-trees a rdfs:Class ;
-    rdfs:label "OSM landuse orchard point trees" ;
-    ccd:ofDataSet osmt:landuse-orchard-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#landuse-orchard-region-raba:id> a rdfs:Class ;
-    rdfs:label "OSM landuse orchard region raba:id" ;
-    ccd:ofDataSet osmt:landuse-orchard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-orchard-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse orchard region source" ;
-    ccd:ofDataSet osmt:landuse-orchard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#landuse-orchard-region-source:date> a rdfs:Class ;
-    rdfs:label "OSM landuse orchard region source:date" ;
-    ccd:ofDataSet osmt:landuse-orchard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-orchard-region-trees a rdfs:Class ;
-    rdfs:label "OSM landuse orchard region trees" ;
-    ccd:ofDataSet osmt:landuse-orchard-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-point-name a rdfs:Class ;
-    rdfs:label "OSM landuse residential point name" ;
-    ccd:ofDataSet osmt:landuse-residential-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-point-residential a rdfs:Class ;
-    rdfs:label "OSM landuse residential point residential" ;
-    ccd:ofDataSet osmt:landuse-residential-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-point-source a rdfs:Class ;
-    rdfs:label "OSM landuse residential point source" ;
-    ccd:ofDataSet osmt:landuse-residential-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-region-name a rdfs:Class ;
-    rdfs:label "OSM landuse residential region name" ;
-    ccd:ofDataSet osmt:landuse-residential-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-region-residential a rdfs:Class ;
-    rdfs:label "OSM landuse residential region residential" ;
-    ccd:ofDataSet osmt:landuse-residential-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:landuse-residential-region-source a rdfs:Class ;
-    rdfs:label "OSM landuse residential region source" ;
-    ccd:ofDataSet osmt:landuse-residential-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-coastline-region-place a rdfs:Class ;
-    rdfs:label "OSM natural coastline region place" ;
-    ccd:ofDataSet osmt:natural-coastline-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-coastline-region-source a rdfs:Class ;
-    rdfs:label "OSM natural coastline region source" ;
-    ccd:ofDataSet osmt:natural-coastline-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#natural-coastline-region-source:date> a rdfs:Class ;
-    rdfs:label "OSM natural coastline region source:date" ;
-    ccd:ofDataSet osmt:natural-coastline-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-point-raba:id> a rdfs:Class ;
-    rdfs:label "OSM natural scrub point raba:id" ;
-    ccd:ofDataSet osmt:natural-scrub-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-scrub-point-source a rdfs:Class ;
-    rdfs:label "OSM natural scrub point source" ;
-    ccd:ofDataSet osmt:natural-scrub-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-point-source:date> a rdfs:Class ;
-    rdfs:label "OSM natural scrub point source:date" ;
-    ccd:ofDataSet osmt:natural-scrub-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-region-raba:id> a rdfs:Class ;
-    rdfs:label "OSM natural scrub region raba:id" ;
-    ccd:ofDataSet osmt:natural-scrub-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-scrub-region-source a rdfs:Class ;
-    rdfs:label "OSM natural scrub region source" ;
-    ccd:ofDataSet osmt:natural-scrub-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-region-source:date> a rdfs:Class ;
-    rdfs:label "OSM natural scrub region source:date" ;
-    ccd:ofDataSet osmt:natural-scrub-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-tree-point-leaf_type a rdfs:Class ;
-    rdfs:label "OSM natural tree point leaf_type" ;
-    ccd:ofDataSet osmt:natural-tree-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-tree-point-source a rdfs:Class ;
-    rdfs:label "OSM natural tree point source" ;
-    ccd:ofDataSet osmt:natural-tree-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-tree-point-species a rdfs:Class ;
-    rdfs:label "OSM natural tree point species" ;
-    ccd:ofDataSet osmt:natural-tree-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-tree-region-leaf_type a rdfs:Class ;
-    rdfs:label "OSM natural tree region leaf_type" ;
-    ccd:ofDataSet osmt:natural-tree-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-tree-region-source a rdfs:Class ;
-    rdfs:label "OSM natural tree region source" ;
-    ccd:ofDataSet osmt:natural-tree-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-tree-region-species a rdfs:Class ;
-    rdfs:label "OSM natural tree region species" ;
-    ccd:ofDataSet osmt:natural-tree-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-water-point-source a rdfs:Class ;
-    rdfs:label "OSM natural water point source" ;
-    ccd:ofDataSet osmt:natural-water-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-water-point-water a rdfs:Class ;
-    rdfs:label "OSM natural water point water" ;
-    ccd:ofDataSet osmt:natural-water-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-water-region-source a rdfs:Class ;
-    rdfs:label "OSM natural water region source" ;
-    ccd:ofDataSet osmt:natural-water-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-water-region-water a rdfs:Class ;
-    rdfs:label "OSM natural water region water" ;
-    ccd:ofDataSet osmt:natural-water-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-point-source a rdfs:Class ;
-    rdfs:label "OSM natural wetland point source" ;
-    ccd:ofDataSet osmt:natural-wetland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-point-type a rdfs:Class ;
-    rdfs:label "OSM natural wetland point type" ;
-    ccd:ofDataSet osmt:natural-wetland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-point-wetland a rdfs:Class ;
-    rdfs:label "OSM natural wetland point wetland" ;
-    ccd:ofDataSet osmt:natural-wetland-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-region-source a rdfs:Class ;
-    rdfs:label "OSM natural wetland region source" ;
-    ccd:ofDataSet osmt:natural-wetland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-region-type a rdfs:Class ;
-    rdfs:label "OSM natural wetland region type" ;
-    ccd:ofDataSet osmt:natural-wetland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wetland-region-wetland a rdfs:Class ;
-    rdfs:label "OSM natural wetland region wetland" ;
-    ccd:ofDataSet osmt:natural-wetland-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-point-leaf_type a rdfs:Class ;
-    rdfs:label "OSM natural wood point leaf_type" ;
-    ccd:ofDataSet osmt:natural-wood-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-point-source a rdfs:Class ;
-    rdfs:label "OSM natural wood point source" ;
-    ccd:ofDataSet osmt:natural-wood-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-point-type a rdfs:Class ;
-    rdfs:label "OSM natural wood point type" ;
-    ccd:ofDataSet osmt:natural-wood-point ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-region-leaf_type a rdfs:Class ;
-    rdfs:label "OSM natural wood region leaf_type" ;
-    ccd:ofDataSet osmt:natural-wood-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-region-source a rdfs:Class ;
-    rdfs:label "OSM natural wood region source" ;
-    ccd:ofDataSet osmt:natural-wood-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:natural-wood-region-type a rdfs:Class ;
-    rdfs:label "OSM natural wood region type" ;
-    ccd:ofDataSet osmt:natural-wood-region ;
-    rdfs:subClassOf ccd:Coverage .
-
-osmt:power-pole-point-material a rdfs:Class ;
-    rdfs:label "OSM power pole point material" ;
-    ccd:ofDataSet osmt:power-pole-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:power-pole-point-source a rdfs:Class ;
-    rdfs:label "OSM power pole point source" ;
-    ccd:ofDataSet osmt:power-pole-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:power-tower-point-design a rdfs:Class ;
-    rdfs:label "OSM power tower point design" ;
-    ccd:ofDataSet osmt:power-tower-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:power-tower-point-source a rdfs:Class ;
-    rdfs:label "OSM power tower point source" ;
-    ccd:ofDataSet osmt:power-tower-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:power-tower-region-design a rdfs:Class ;
-    rdfs:label "OSM power tower region design" ;
-    ccd:ofDataSet osmt:power-tower-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:power-tower-region-source a rdfs:Class ;
-    rdfs:label "OSM power tower region source" ;
-    ccd:ofDataSet osmt:power-tower-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-<https://questionbasedanalysis.com/OSMTypes.rdf#waterway-ditch-region-mml:class> a rdfs:Class ;
-    rdfs:label "OSM waterway ditch region mml:class" ;
-    ccd:ofDataSet osmt:waterway-ditch-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-ditch-region-source a rdfs:Class ;
-    rdfs:label "OSM waterway ditch region source" ;
-    ccd:ofDataSet osmt:waterway-ditch-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-ditch-region-tunnel a rdfs:Class ;
-    rdfs:label "OSM waterway ditch region tunnel" ;
-    ccd:ofDataSet osmt:waterway-ditch-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-point-layer a rdfs:Class ;
-    rdfs:label "OSM waterway drain point layer" ;
-    ccd:ofDataSet osmt:waterway-drain-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-point-source a rdfs:Class ;
-    rdfs:label "OSM waterway drain point source" ;
-    ccd:ofDataSet osmt:waterway-drain-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-point-tunnel a rdfs:Class ;
-    rdfs:label "OSM waterway drain point tunnel" ;
-    ccd:ofDataSet osmt:waterway-drain-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-region-layer a rdfs:Class ;
-    rdfs:label "OSM waterway drain region layer" ;
-    ccd:ofDataSet osmt:waterway-drain-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-region-source a rdfs:Class ;
-    rdfs:label "OSM waterway drain region source" ;
-    ccd:ofDataSet osmt:waterway-drain-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-drain-region-tunnel a rdfs:Class ;
-    rdfs:label "OSM waterway drain region tunnel" ;
-    ccd:ofDataSet osmt:waterway-drain-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-point-layer a rdfs:Class ;
-    rdfs:label "OSM waterway river point layer" ;
-    ccd:ofDataSet osmt:waterway-river-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-point-name a rdfs:Class ;
-    rdfs:label "OSM waterway river point name" ;
-    ccd:ofDataSet osmt:waterway-river-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-point-note a rdfs:Class ;
-    rdfs:label "OSM waterway river point note" ;
-    ccd:ofDataSet osmt:waterway-river-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-point-source a rdfs:Class ;
-    rdfs:label "OSM waterway river point source" ;
-    ccd:ofDataSet osmt:waterway-river-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-region-layer a rdfs:Class ;
-    rdfs:label "OSM waterway river region layer" ;
-    ccd:ofDataSet osmt:waterway-river-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-region-name a rdfs:Class ;
-    rdfs:label "OSM waterway river region name" ;
-    ccd:ofDataSet osmt:waterway-river-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-region-note a rdfs:Class ;
-    rdfs:label "OSM waterway river region note" ;
-    ccd:ofDataSet osmt:waterway-river-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-river-region-source a rdfs:Class ;
-    rdfs:label "OSM waterway river region source" ;
-    ccd:ofDataSet osmt:waterway-river-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-point-intermittent a rdfs:Class ;
-    rdfs:label "OSM waterway stream point intermittent" ;
-    ccd:ofDataSet osmt:waterway-stream-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-point-name a rdfs:Class ;
-    rdfs:label "OSM waterway stream point name" ;
-    ccd:ofDataSet osmt:waterway-stream-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-point-source a rdfs:Class ;
-    rdfs:label "OSM waterway stream point source" ;
-    ccd:ofDataSet osmt:waterway-stream-point ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-region-intermittent a rdfs:Class ;
-    rdfs:label "OSM waterway stream region intermittent" ;
-    ccd:ofDataSet osmt:waterway-stream-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-region-name a rdfs:Class ;
-    rdfs:label "OSM waterway stream region name" ;
-    ccd:ofDataSet osmt:waterway-stream-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:waterway-stream-region-source a rdfs:Class ;
-    rdfs:label "OSM waterway stream region source" ;
-    ccd:ofDataSet osmt:waterway-stream-region ;
-    rdfs:subClassOf ccd:ObjectVector .
-
-osmt:natural-coastline rdfs:label "OSM natural coastline" .
-
-osmt:power-pole rdfs:label "OSM power pole" .
-
-osmt:waterway-ditch rdfs:label "OSM waterway ditch" .
-
-osmt:amenity-bench rdfs:label "OSM amenity bench" .
-
-osmt:amenity-bench-point rdfs:label "OSM amenity bench point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:amenity-bench .
-
-osmt:amenity-bench-region rdfs:label "OSM amenity bench region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:amenity-bench .
-
-osmt:amenity-parking rdfs:label "OSM amenity parking" .
-
-osmt:amenity-place_of_worship rdfs:label "OSM amenity place_of_worship" .
-
-osmt:amenity-restaurant rdfs:label "OSM amenity restaurant" .
-
-osmt:amenity-school rdfs:label "OSM amenity school" .
-
-osmt:barrier-fence rdfs:label "OSM barrier fence" .
-
-osmt:barrier-gate rdfs:label "OSM barrier gate" .
-
-osmt:barrier-hedge rdfs:label "OSM barrier hedge" .
-
-osmt:barrier-hedge-point rdfs:label "OSM barrier hedge point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:barrier-hedge .
-
-osmt:barrier-hedge-region rdfs:label "OSM barrier hedge region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:barrier-hedge .
-
-osmt:barrier-wall rdfs:label "OSM barrier wall" .
-
-osmt:barrier-wall-point rdfs:label "OSM barrier wall point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:barrier-wall .
-
-osmt:barrier-wall-region rdfs:label "OSM barrier wall region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:barrier-wall .
-
-osmt:building-apartments rdfs:label "OSM building apartments" .
-
-osmt:building-commercial rdfs:label "OSM building commercial" .
-
-osmt:building-detached rdfs:label "OSM building detached" .
-
-osmt:building-garage rdfs:label "OSM building garage" .
-
-osmt:building-house rdfs:label "OSM building house" .
-
-osmt:building-hut rdfs:label "OSM building hut" .
-
-osmt:building-industrial rdfs:label "OSM building industrial" .
-
-osmt:building-residential rdfs:label "OSM building residential" .
-
-osmt:building-roof rdfs:label "OSM building roof" .
-
-osmt:building-shed rdfs:label "OSM building shed" .
-
-osmt:building-yes rdfs:label "OSM building yes" .
-
-osmt:highway-residential rdfs:label "OSM highway residential" .
-
-osmt:landuse-farmland rdfs:label "OSM landuse farmland" .
-
-osmt:landuse-farmyard rdfs:label "OSM landuse farmyard" .
-
-osmt:landuse-forest rdfs:label "OSM landuse forest" .
-
-osmt:landuse-grass rdfs:label "OSM landuse grass" .
-
-osmt:landuse-meadow rdfs:label "OSM landuse meadow" .
-
-osmt:landuse-orchard rdfs:label "OSM landuse orchard" .
-
-osmt:landuse-residential rdfs:label "OSM landuse residential" .
-
-osmt:natural-scrub rdfs:label "OSM natural scrub" .
-
-osmt:natural-tree rdfs:label "OSM natural tree" .
-
-osmt:natural-water rdfs:label "OSM natural water" .
-
-osmt:natural-water-point rdfs:label "OSM natural water point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:natural-water .
-
-osmt:natural-water-region rdfs:label "OSM natural water region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-water .
-
-osmt:natural-wetland rdfs:label "OSM natural wetland" .
-
-osmt:natural-wood rdfs:label "OSM natural wood" .
-
-osmt:power-pole-point rdfs:label "OSM power pole point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:power-pole .
-
-osmt:power-tower rdfs:label "OSM power tower" .
-
-osmt:power-tower-point rdfs:label "OSM power tower point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:power-tower .
-
-osmt:power-tower-region rdfs:label "OSM power tower region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:power-tower .
-
-osmt:waterway-drain rdfs:label "OSM waterway drain" .
-
-osmt:waterway-river rdfs:label "OSM waterway river" .
-
-osmt:waterway-stream rdfs:label "OSM waterway stream" .
-
-osmt:amenity-parking-point rdfs:label "OSM amenity parking point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:amenity-parking .
-
-osmt:amenity-parking-region rdfs:label "OSM amenity parking region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:amenity-parking .
-
-osmt:amenity-place_of_worship-point rdfs:label "OSM amenity place_of_worship point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:amenity-place_of_worship .
-
-osmt:amenity-place_of_worship-region rdfs:label "OSM amenity place_of_worship region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:amenity-place_of_worship .
-
-osmt:barrier-fence-point rdfs:label "OSM barrier fence point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:barrier-fence .
-
-osmt:barrier-fence-region rdfs:label "OSM barrier fence region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:barrier-fence .
-
-osmt:barrier-gate-point rdfs:label "OSM barrier gate point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:barrier-gate .
-
-osmt:barrier-gate-region rdfs:label "OSM barrier gate region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:barrier-gate .
-
-osmt:building-garage-point rdfs:label "OSM building garage point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-garage .
-
-osmt:building-garage-region rdfs:label "OSM building garage region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-garage .
-
-osmt:landuse-farmland-point rdfs:label "OSM landuse farmland point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-farmland .
-
-osmt:landuse-farmland-region rdfs:label "OSM landuse farmland region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-farmland .
-
-osmt:landuse-farmyard-point rdfs:label "OSM landuse farmyard point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-farmyard .
-
-osmt:landuse-farmyard-region rdfs:label "OSM landuse farmyard region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-farmyard .
-
-osmt:landuse-forest-point rdfs:label "OSM landuse forest point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-forest .
-
-osmt:landuse-forest-region rdfs:label "OSM landuse forest region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-forest .
-
-osmt:landuse-grass-point rdfs:label "OSM landuse grass point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-grass .
-
-osmt:landuse-grass-region rdfs:label "OSM landuse grass region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-grass .
-
-osmt:landuse-meadow-point rdfs:label "OSM landuse meadow point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-meadow .
-
-osmt:landuse-meadow-region rdfs:label "OSM landuse meadow region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-meadow .
-
-osmt:landuse-residential-point rdfs:label "OSM landuse residential point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-residential .
-
-osmt:landuse-residential-region rdfs:label "OSM landuse residential region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-residential .
-
-osmt:natural-coastline-region rdfs:label "OSM natural coastline region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-coastline .
-
-osmt:natural-scrub-point rdfs:label "OSM natural scrub point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:natural-scrub .
-
-osmt:natural-scrub-region rdfs:label "OSM natural scrub region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-scrub .
-
-osmt:natural-tree-point rdfs:label "OSM natural tree point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:natural-tree .
-
-osmt:natural-tree-region rdfs:label "OSM natural tree region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-tree .
-
-osmt:natural-wetland-point rdfs:label "OSM natural wetland point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:natural-wetland .
-
-osmt:natural-wetland-region rdfs:label "OSM natural wetland region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-wetland .
-
-osmt:natural-wood-point rdfs:label "OSM natural wood point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:natural-wood .
-
-osmt:natural-wood-region rdfs:label "OSM natural wood region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:natural-wood .
-
-osmt:waterway-ditch-region rdfs:label "OSM waterway ditch region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:waterway-ditch .
-
-osmt:waterway-drain-point rdfs:label "OSM waterway drain point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:waterway-drain .
-
-osmt:waterway-drain-region rdfs:label "OSM waterway drain region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:waterway-drain .
-
-osmt:waterway-stream-point rdfs:label "OSM waterway stream point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:waterway-stream .
-
-osmt:waterway-stream-region rdfs:label "OSM waterway stream region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:waterway-stream .
-
-osmt:amenity-restaurant-point rdfs:label "OSM amenity restaurant point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:amenity-restaurant .
-
-osmt:amenity-restaurant-region rdfs:label "OSM amenity restaurant region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:amenity-restaurant .
-
-osmt:amenity-school-point rdfs:label "OSM amenity school point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:amenity-school .
-
-osmt:amenity-school-region rdfs:label "OSM amenity school region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:amenity-school .
-
-osmt:building-apartments-point rdfs:label "OSM building apartments point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-apartments .
-
-osmt:building-apartments-region rdfs:label "OSM building apartments region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-apartments .
-
-osmt:building-commercial-point rdfs:label "OSM building commercial point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-commercial .
-
-osmt:building-commercial-region rdfs:label "OSM building commercial region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-commercial .
-
-osmt:building-detached-point rdfs:label "OSM building detached point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-detached .
-
-osmt:building-detached-region rdfs:label "OSM building detached region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-detached .
-
-osmt:building-house-point rdfs:label "OSM building house point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-house .
-
-osmt:building-house-region rdfs:label "OSM building house region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-house .
-
-osmt:building-hut-point rdfs:label "OSM building hut point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-hut .
-
-osmt:building-hut-region rdfs:label "OSM building hut region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-hut .
-
-osmt:building-industrial-point rdfs:label "OSM building industrial point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-industrial .
-
-osmt:building-industrial-region rdfs:label "OSM building industrial region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-industrial .
-
-osmt:building-residential-point rdfs:label "OSM building residential point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-residential .
-
-osmt:building-residential-region rdfs:label "OSM building residential region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-residential .
-
-osmt:building-roof-point rdfs:label "OSM building roof point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-roof .
-
-osmt:building-roof-region rdfs:label "OSM building roof region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-roof .
-
-osmt:building-shed-point rdfs:label "OSM building shed point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-shed .
-
-osmt:building-shed-region rdfs:label "OSM building shed region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-shed .
-
-osmt:building-yes-point rdfs:label "OSM building yes point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:building-yes .
-
-osmt:building-yes-region rdfs:label "OSM building yes region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:building-yes .
-
-osmt:highway-residential-line rdfs:label "OSM highway residential line" ;
-    rdfs:subClassOf ccd:LineDataSet,
-        osmt:highway-residential .
-
-osmt:highway-residential-point rdfs:label "OSM highway residential point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:highway-residential .
-
-osmt:landuse-orchard-point rdfs:label "OSM landuse orchard point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:landuse-orchard .
-
-osmt:landuse-orchard-region rdfs:label "OSM landuse orchard region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:landuse-orchard .
-
-osmt:waterway-river-point rdfs:label "OSM waterway river point" ;
-    rdfs:subClassOf ccd:PointDataSet,
-        osmt:waterway-river .
-
-osmt:waterway-river-region rdfs:label "OSM waterway river region" ;
-    rdfs:subClassOf ccd:RegionDataSet,
-        osmt:waterway-river .
+osmt:amenity-parking a rdfs:Class ;
+    rdfs:label "OSM type amenity parking" ;
+    rdfs:comment "A place for parking cars" ;
+    rdfs:subClassOf osmt:amenity .
+
+osmt:barrier-fence a rdfs:Class ;
+    rdfs:label "OSM type barrier fence" ;
+    rdfs:comment "A freestanding structure designed to restrict or prevent movement across a boundary, generally distinguished from a wall by the lightness of its construction." ;
+    rdfs:subClassOf osmt:barrier .
+
+osmt:barrier-gate a rdfs:Class ;
+    rdfs:label "OSM type barrier gate" ;
+    rdfs:comment "A section in a wall or fence which can be opened to allow access." ;
+    rdfs:subClassOf osmt:barrier .
+
+osmt:barrier-wall a rdfs:Class ;
+    rdfs:label "OSM type barrier wall" ;
+    rdfs:comment "A freestanding structure, designed to restrict or prevent movement across a boundary, typically made from solid brick, concrete or rocks, and almost always built so that it is opaque to vision." ;
+    rdfs:subClassOf osmt:barrier .
+
+osmt:boundary-administrative a rdfs:Class ;
+    rdfs:label "OSM type boundary administrative" ;
+    rdfs:comment "An administrative boundary" ;
+    rdfs:subClassOf osmt:boundary .
+
+osmt:bridge-yes a rdfs:Class ;
+    rdfs:label "OSM type bridge yes" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:bridge .
+
+osmt:building-apartments a rdfs:Class ;
+    rdfs:label "OSM type building apartments" ;
+    rdfs:comment "A building arranged into individual dwellings, often on separate floors. May also have retail outlets on the ground floor." ;
+    rdfs:subClassOf osmt:building .
+
+osmt:building-detached a rdfs:Class ;
+    rdfs:label "OSM type building detached" ;
+    rdfs:comment "A free-standing residential building usually housing a single-family." ;
+    rdfs:subClassOf osmt:building .
+
+osmt:building-garage a rdfs:Class ;
+    rdfs:label "OSM type building garage" ;
+    rdfs:comment "Denotes a single-owner private garage" ;
+    rdfs:subClassOf osmt:building .
+
+osmt:building-house a rdfs:Class ;
+    rdfs:label "OSM type building house" ;
+    rdfs:comment "A single dwelling unit usually inhabited by one family." ;
+    rdfs:subClassOf osmt:building .
+
+osmt:building-residential a rdfs:Class ;
+    rdfs:label "OSM type building residential" ;
+    rdfs:comment "A general tag for a building used primarily for residential purposes." ;
+    rdfs:subClassOf osmt:building .
+
+osmt:building-yes a rdfs:Class ;
+    rdfs:label "OSM type building yes" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:building .
+
+osmt:highway-bus_stop a rdfs:Class ;
+    rdfs:label "OSM type highway bus_stop" ;
+    rdfs:comment "A bus stop is a place where public buses stop." ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:highway-primary a rdfs:Class ;
+    rdfs:label "OSM type highway primary" ;
+    rdfs:comment "A highway linking large towns." ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:highway-residential a rdfs:Class ;
+    rdfs:label "OSM type highway residential" ;
+    rdfs:comment "Road in a residential area" ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:highway-secondary a rdfs:Class ;
+    rdfs:label "OSM type highway secondary" ;
+    rdfs:comment "A highway linking large towns." ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:highway-tertiary a rdfs:Class ;
+    rdfs:label "OSM type highway tertiary" ;
+    rdfs:comment "A road linking small settlements, or the local centres of a large town or city." ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:highway-unclassified a rdfs:Class ;
+    rdfs:label "OSM type highway unclassified" ;
+    rdfs:comment "Public access road, non-residential." ;
+    rdfs:subClassOf osmt:highway .
+
+osmt:landuse-farmland a rdfs:Class ;
+    rdfs:label "OSM type landuse farmland" ;
+    rdfs:comment "Area of farmland used mainly for tillage." ;
+    rdfs:subClassOf osmt:landuse .
+
+osmt:landuse-forest a rdfs:Class ;
+    rdfs:label "OSM type landuse forest" ;
+    rdfs:comment "Managed woodland or woodland plantation." ;
+    rdfs:subClassOf osmt:landuse .
+
+osmt:landuse-grass a rdfs:Class ;
+    rdfs:label "OSM type landuse grass" ;
+    rdfs:comment "A smaller area of mown and managed grass" ;
+    rdfs:subClassOf osmt:landuse .
+
+osmt:landuse-meadow a rdfs:Class ;
+    rdfs:label "OSM type landuse meadow" ;
+    rdfs:comment "An area of meadow or pasture" ;
+    rdfs:subClassOf osmt:landuse .
+
+osmt:landuse-residential a rdfs:Class ;
+    rdfs:label "OSM type landuse residential" ;
+    rdfs:comment "Predominantly houses or apartment buildings." ;
+    rdfs:subClassOf osmt:landuse .
+
+osmt:lit-yes a rdfs:Class ;
+    rdfs:label "OSM type lit yes" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:lit .
+
+osmt:natural-scrub a rdfs:Class ;
+    rdfs:label "OSM type natural scrub" ;
+    rdfs:comment "Uncultivated land covered with bushes or stunted trees." ;
+    rdfs:subClassOf osmt:natural .
+
+osmt:natural-tree a rdfs:Class ;
+    rdfs:label "OSM type natural tree" ;
+    rdfs:comment "A single tree" ;
+    rdfs:subClassOf osmt:natural .
+
+osmt:natural-water a rdfs:Class ;
+    rdfs:label "OSM type natural water" ;
+    rdfs:comment "Any body of water, from natural such as a lake or pond to artificial like moat or canal" ;
+    rdfs:subClassOf osmt:natural .
+
+osmt:natural-wetland a rdfs:Class ;
+    rdfs:label "OSM type natural wetland" ;
+    rdfs:comment "A natural area subject to inundation or with waterlogged ground" ;
+    rdfs:subClassOf osmt:natural .
+
+osmt:natural-wood a rdfs:Class ;
+    rdfs:label "OSM type natural wood" ;
+    rdfs:comment "Tree-covered area (a 'forest' or 'wood') not managed for economic purposes." ;
+    rdfs:subClassOf osmt:natural .
+
+osmt:oneway-no a rdfs:Class ;
+    rdfs:label "OSM type oneway no" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:oneway .
+
+osmt:oneway-yes a rdfs:Class ;
+    rdfs:label "OSM type oneway yes" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:oneway .
+
+osmt:power-pole a rdfs:Class ;
+    rdfs:label "OSM type power pole" ;
+    rdfs:comment "A single (often wooden or concrete) pole." ;
+    rdfs:subClassOf osmt:power .
+
+osmt:power-tower a rdfs:Class ;
+    rdfs:label "OSM type power tower" ;
+    rdfs:comment "For towers or pylons carrying high voltage electricity cables. Normally constructed from steel latticework." ;
+    rdfs:subClassOf osmt:power .
+
+osmt:source-survey a rdfs:Class ;
+    rdfs:label "OSM type source survey" ;
+    rdfs:comment "None" ;
+    rdfs:subClassOf osmt:source .
+
+osmt:surface-asphalt a rdfs:Class ;
+    rdfs:label "OSM type surface asphalt" ;
+    rdfs:comment "Surface area paved with asphalt concrete" ;
+    rdfs:subClassOf osmt:surface .
+
+osmt:surface-paved a rdfs:Class ;
+    rdfs:label "OSM type surface paved" ;
+    rdfs:comment "" ;
+    rdfs:subClassOf osmt:surface .
+
+osmt:waterway-ditch a rdfs:Class ;
+    rdfs:label "OSM type waterway ditch" ;
+    rdfs:comment "A small man-made draining waterway, often found along roads." ;
+    rdfs:subClassOf osmt:waterway .
+
+osmt:waterway-stream a rdfs:Class ;
+    rdfs:label "OSM type waterway stream" ;
+    rdfs:comment "A naturally-forming waterway that is too narrow to be classed as a river." ;
+    rdfs:subClassOf osmt:waterway .
+
+osmt:amenity-parking-point-access a ccd:ObjectVector ;
+    rdfs:label "OSM attribute access of amenity parkingpoint" ;
+    ccd:ofDataSet osmt:amenity-parking-point .
+
+osmt:amenity-parking-point-fee a ccd:ObjectVector ;
+    rdfs:label "OSM attribute fee of amenity parkingpoint" ;
+    ccd:ofDataSet osmt:amenity-parking-point .
+
+osmt:amenity-parking-point-parking a ccd:ObjectVector ;
+    rdfs:label "OSM attribute parking of amenity parkingpoint" ;
+    ccd:ofDataSet osmt:amenity-parking-point .
+
+osmt:amenity-parking-region-access a ccd:ObjectVector ;
+    rdfs:label "OSM attribute access of amenity parkingregion" ;
+    ccd:ofDataSet osmt:amenity-parking-region .
+
+osmt:amenity-parking-region-fee a ccd:ObjectVector ;
+    rdfs:label "OSM attribute fee of amenity parkingregion" ;
+    ccd:ofDataSet osmt:amenity-parking-region .
+
+osmt:amenity-parking-region-parking a ccd:ObjectVector ;
+    rdfs:label "OSM attribute parking of amenity parkingregion" ;
+    ccd:ofDataSet osmt:amenity-parking-region .
+
+osmt:barrier-fence-point-fence_type a ccd:ObjectVector ;
+    rdfs:label "OSM attribute fence_type of barrier fencepoint" ;
+    ccd:ofDataSet osmt:barrier-fence-point .
+
+osmt:barrier-fence-point-landuse a ccd:ObjectVector ;
+    rdfs:label "OSM attribute landuse of barrier fencepoint" ;
+    ccd:ofDataSet osmt:barrier-fence-point .
+
+osmt:barrier-fence-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of barrier fencepoint" ;
+    ccd:ofDataSet osmt:barrier-fence-point .
+
+osmt:barrier-fence-region-fence_type a ccd:ObjectVector ;
+    rdfs:label "OSM attribute fence_type of barrier fenceregion" ;
+    ccd:ofDataSet osmt:barrier-fence-region .
+
+osmt:barrier-fence-region-landuse a ccd:ObjectVector ;
+    rdfs:label "OSM attribute landuse of barrier fenceregion" ;
+    ccd:ofDataSet osmt:barrier-fence-region .
+
+osmt:barrier-fence-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of barrier fenceregion" ;
+    ccd:ofDataSet osmt:barrier-fence-region .
+
+osmt:barrier-gate-point-access a ccd:ObjectVector ;
+    rdfs:label "OSM attribute access of barrier gatepoint" ;
+    ccd:ofDataSet osmt:barrier-gate-point .
+
+osmt:barrier-gate-point-bicycle a ccd:ObjectVector ;
+    rdfs:label "OSM attribute bicycle of barrier gatepoint" ;
+    ccd:ofDataSet osmt:barrier-gate-point .
+
+osmt:barrier-gate-point-foot a ccd:ObjectVector ;
+    rdfs:label "OSM attribute foot of barrier gatepoint" ;
+    ccd:ofDataSet osmt:barrier-gate-point .
+
+osmt:barrier-gate-region-access a ccd:ObjectVector ;
+    rdfs:label "OSM attribute access of barrier gateregion" ;
+    ccd:ofDataSet osmt:barrier-gate-region .
+
+osmt:barrier-gate-region-bicycle a ccd:ObjectVector ;
+    rdfs:label "OSM attribute bicycle of barrier gateregion" ;
+    ccd:ofDataSet osmt:barrier-gate-region .
+
+osmt:barrier-gate-region-foot a ccd:ObjectVector ;
+    rdfs:label "OSM attribute foot of barrier gateregion" ;
+    ccd:ofDataSet osmt:barrier-gate-region .
+
+osmt:barrier-wall-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of barrier wallpoint" ;
+    ccd:ofDataSet osmt:barrier-wall-point .
+
+osmt:barrier-wall-point-wall a ccd:ObjectVector ;
+    rdfs:label "OSM attribute wall of barrier wallpoint" ;
+    ccd:ofDataSet osmt:barrier-wall-point .
+
+osmt:barrier-wall-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of barrier wallregion" ;
+    ccd:ofDataSet osmt:barrier-wall-region .
+
+osmt:barrier-wall-region-wall a ccd:ObjectVector ;
+    rdfs:label "OSM attribute wall of barrier wallregion" ;
+    ccd:ofDataSet osmt:barrier-wall-region .
+
+osmt:boundary-administrative-point-admin_level a ccd:ObjectVector ;
+    rdfs:label "OSM attribute admin_level of boundary administrativepoint" ;
+    ccd:ofDataSet osmt:boundary-administrative-point .
+
+osmt:boundary-administrative-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of boundary administrativepoint" ;
+    ccd:ofDataSet osmt:boundary-administrative-point .
+
+osmt:boundary-administrative-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of boundary administrativepoint" ;
+    ccd:ofDataSet osmt:boundary-administrative-point .
+
+osmt:boundary-administrative-region-admin_level a ccd:ObjectVector ;
+    rdfs:label "OSM attribute admin_level of boundary administrativeregion" ;
+    ccd:ofDataSet osmt:boundary-administrative-region .
+
+osmt:boundary-administrative-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of boundary administrativeregion" ;
+    ccd:ofDataSet osmt:boundary-administrative-region .
+
+osmt:boundary-administrative-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of boundary administrativeregion" ;
+    ccd:ofDataSet osmt:boundary-administrative-region .
+
+osmt:bridge-yes-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of bridge yespoint" ;
+    ccd:ofDataSet osmt:bridge-yes-point .
+
+osmt:bridge-yes-point-layer a ccd:ObjectVector ;
+    rdfs:label "OSM attribute layer of bridge yespoint" ;
+    ccd:ofDataSet osmt:bridge-yes-point .
+
+osmt:bridge-yes-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of bridge yespoint" ;
+    ccd:ofDataSet osmt:bridge-yes-point .
+
+osmt:bridge-yes-point-ref a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref of bridge yespoint" ;
+    ccd:ofDataSet osmt:bridge-yes-point .
+
+osmt:bridge-yes-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of bridge yesregion" ;
+    ccd:ofDataSet osmt:bridge-yes-region .
+
+osmt:bridge-yes-region-layer a ccd:ObjectVector ;
+    rdfs:label "OSM attribute layer of bridge yesregion" ;
+    ccd:ofDataSet osmt:bridge-yes-region .
+
+osmt:bridge-yes-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of bridge yesregion" ;
+    ccd:ofDataSet osmt:bridge-yes-region .
+
+osmt:bridge-yes-region-ref a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref of bridge yesregion" ;
+    ccd:ofDataSet osmt:bridge-yes-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building apartmentspoint" ;
+    ccd:ofDataSet osmt:building-apartments-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building apartmentspoint" ;
+    ccd:ofDataSet osmt:building-apartments-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building apartmentspoint" ;
+    ccd:ofDataSet osmt:building-apartments-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-point-building:levels> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute building:levels of building apartmentspoint" ;
+    ccd:ofDataSet osmt:building-apartments-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building apartmentsregion" ;
+    ccd:ofDataSet osmt:building-apartments-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building apartmentsregion" ;
+    ccd:ofDataSet osmt:building-apartments-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building apartmentsregion" ;
+    ccd:ofDataSet osmt:building-apartments-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-apartments-region-building:levels> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute building:levels of building apartmentsregion" ;
+    ccd:ofDataSet osmt:building-apartments-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building detachedpoint" ;
+    ccd:ofDataSet osmt:building-detached-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building detachedpoint" ;
+    ccd:ofDataSet osmt:building-detached-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:postcode> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:postcode of building detachedpoint" ;
+    ccd:ofDataSet osmt:building-detached-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building detachedpoint" ;
+    ccd:ofDataSet osmt:building-detached-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building detachedregion" ;
+    ccd:ofDataSet osmt:building-detached-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building detachedregion" ;
+    ccd:ofDataSet osmt:building-detached-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:postcode> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:postcode of building detachedregion" ;
+    ccd:ofDataSet osmt:building-detached-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-detached-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building detachedregion" ;
+    ccd:ofDataSet osmt:building-detached-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-point-building:ruian:type> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute building:ruian:type of building garagepoint" ;
+    ccd:ofDataSet osmt:building-garage-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-point-ref:ruian:building> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref:ruian:building of building garagepoint" ;
+    ccd:ofDataSet osmt:building-garage-point .
+
+osmt:building-garage-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building garagepoint" ;
+    ccd:ofDataSet osmt:building-garage-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-region-building:ruian:type> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute building:ruian:type of building garageregion" ;
+    ccd:ofDataSet osmt:building-garage-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-garage-region-ref:ruian:building> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref:ruian:building of building garageregion" ;
+    ccd:ofDataSet osmt:building-garage-region .
+
+osmt:building-garage-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building garageregion" ;
+    ccd:ofDataSet osmt:building-garage-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building housepoint" ;
+    ccd:ofDataSet osmt:building-house-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building housepoint" ;
+    ccd:ofDataSet osmt:building-house-point .
+
+osmt:building-house-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building housepoint" ;
+    ccd:ofDataSet osmt:building-house-point .
+
+osmt:building-house-point-start_date a ccd:ObjectVector ;
+    rdfs:label "OSM attribute start_date of building housepoint" ;
+    ccd:ofDataSet osmt:building-house-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building houseregion" ;
+    ccd:ofDataSet osmt:building-house-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-house-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building houseregion" ;
+    ccd:ofDataSet osmt:building-house-region .
+
+osmt:building-house-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building houseregion" ;
+    ccd:ofDataSet osmt:building-house-region .
+
+osmt:building-house-region-start_date a ccd:ObjectVector ;
+    rdfs:label "OSM attribute start_date of building houseregion" ;
+    ccd:ofDataSet osmt:building-house-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building residentialpoint" ;
+    ccd:ofDataSet osmt:building-residential-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building residentialpoint" ;
+    ccd:ofDataSet osmt:building-residential-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building residentialpoint" ;
+    ccd:ofDataSet osmt:building-residential-point .
+
+osmt:building-residential-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building residentialpoint" ;
+    ccd:ofDataSet osmt:building-residential-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building residentialregion" ;
+    ccd:ofDataSet osmt:building-residential-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building residentialregion" ;
+    ccd:ofDataSet osmt:building-residential-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-residential-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building residentialregion" ;
+    ccd:ofDataSet osmt:building-residential-region .
+
+osmt:building-residential-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building residentialregion" ;
+    ccd:ofDataSet osmt:building-residential-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building yespoint" ;
+    ccd:ofDataSet osmt:building-yes-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building yespoint" ;
+    ccd:ofDataSet osmt:building-yes-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building yespoint" ;
+    ccd:ofDataSet osmt:building-yes-point .
+
+osmt:building-yes-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building yespoint" ;
+    ccd:ofDataSet osmt:building-yes-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:city> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:city of building yesregion" ;
+    ccd:ofDataSet osmt:building-yes-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of building yesregion" ;
+    ccd:ofDataSet osmt:building-yes-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#building-yes-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of building yesregion" ;
+    ccd:ofDataSet osmt:building-yes-region .
+
+osmt:building-yes-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of building yesregion" ;
+    ccd:ofDataSet osmt:building-yes-region .
+
+osmt:highway-bus_stop-point-bus a ccd:ObjectVector ;
+    rdfs:label "OSM attribute bus of highway bus stoppoint" ;
+    ccd:ofDataSet osmt:highway-bus_stop-point .
+
+osmt:highway-bus_stop-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway bus stoppoint" ;
+    ccd:ofDataSet osmt:highway-bus_stop-point .
+
+osmt:highway-bus_stop-point-public_transport a ccd:ObjectVector ;
+    rdfs:label "OSM attribute public_transport of highway bus stoppoint" ;
+    ccd:ofDataSet osmt:highway-bus_stop-point .
+
+osmt:highway-bus_stop-region-bus a ccd:ObjectVector ;
+    rdfs:label "OSM attribute bus of highway bus stopregion" ;
+    ccd:ofDataSet osmt:highway-bus_stop-region .
+
+osmt:highway-bus_stop-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway bus stopregion" ;
+    ccd:ofDataSet osmt:highway-bus_stop-region .
+
+osmt:highway-bus_stop-region-public_transport a ccd:ObjectVector ;
+    rdfs:label "OSM attribute public_transport of highway bus stopregion" ;
+    ccd:ofDataSet osmt:highway-bus_stop-region .
+
+osmt:highway-primary-region-lanes a ccd:ObjectVector ;
+    rdfs:label "OSM attribute lanes of highway primaryregion" ;
+    ccd:ofDataSet osmt:highway-primary-region .
+
+osmt:highway-primary-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway primaryregion" ;
+    ccd:ofDataSet osmt:highway-primary-region .
+
+osmt:highway-primary-region-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of highway primaryregion" ;
+    ccd:ofDataSet osmt:highway-primary-region .
+
+osmt:highway-primary-region-ref a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref of highway primaryregion" ;
+    ccd:ofDataSet osmt:highway-primary-region .
+
+osmt:highway-residential-line-name a ccd:NetworkVector ;
+    rdfs:label "OSM attribute name of highway residentialline" ;
+    ccd:ofDataSet osmt:highway-residential-line .
+
+osmt:highway-residential-line-source a ccd:NetworkVector ;
+    rdfs:label "OSM attribute source of highway residentialline" ;
+    ccd:ofDataSet osmt:highway-residential-line .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-line-tiger:cfcc> a ccd:NetworkVector ;
+    rdfs:label "OSM attribute tiger:cfcc of highway residentialline" ;
+    ccd:ofDataSet osmt:highway-residential-line .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-line-tiger:county> a ccd:NetworkVector ;
+    rdfs:label "OSM attribute tiger:county of highway residentialline" ;
+    ccd:ofDataSet osmt:highway-residential-line .
+
+osmt:highway-residential-point-name a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway residentialpoint" ;
+    ccd:ofDataSet osmt:highway-residential-point .
+
+osmt:highway-residential-point-source a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway residentialpoint" ;
+    ccd:ofDataSet osmt:highway-residential-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-point-tiger:cfcc> a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute tiger:cfcc of highway residentialpoint" ;
+    ccd:ofDataSet osmt:highway-residential-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-point-tiger:county> a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute tiger:county of highway residentialpoint" ;
+    ccd:ofDataSet osmt:highway-residential-point .
+
+osmt:highway-residential-region-name a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway residentialregion" ;
+    ccd:ofDataSet osmt:highway-residential-region .
+
+osmt:highway-residential-region-source a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway residentialregion" ;
+    ccd:ofDataSet osmt:highway-residential-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-region-tiger:cfcc> a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute tiger:cfcc of highway residentialregion" ;
+    ccd:ofDataSet osmt:highway-residential-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#highway-residential-region-tiger:county> a ccd:NetworkVector,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute tiger:county of highway residentialregion" ;
+    ccd:ofDataSet osmt:highway-residential-region .
+
+osmt:highway-secondary-point-maxspeed a ccd:ObjectVector ;
+    rdfs:label "OSM attribute maxspeed of highway secondarypoint" ;
+    ccd:ofDataSet osmt:highway-secondary-point .
+
+osmt:highway-secondary-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway secondarypoint" ;
+    ccd:ofDataSet osmt:highway-secondary-point .
+
+osmt:highway-secondary-point-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of highway secondarypoint" ;
+    ccd:ofDataSet osmt:highway-secondary-point .
+
+osmt:highway-secondary-point-ref a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref of highway secondarypoint" ;
+    ccd:ofDataSet osmt:highway-secondary-point .
+
+osmt:highway-secondary-region-maxspeed a ccd:ObjectVector ;
+    rdfs:label "OSM attribute maxspeed of highway secondaryregion" ;
+    ccd:ofDataSet osmt:highway-secondary-region .
+
+osmt:highway-secondary-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway secondaryregion" ;
+    ccd:ofDataSet osmt:highway-secondary-region .
+
+osmt:highway-secondary-region-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of highway secondaryregion" ;
+    ccd:ofDataSet osmt:highway-secondary-region .
+
+osmt:highway-secondary-region-ref a ccd:ObjectVector ;
+    rdfs:label "OSM attribute ref of highway secondaryregion" ;
+    ccd:ofDataSet osmt:highway-secondary-region .
+
+osmt:highway-tertiary-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway tertiarypoint" ;
+    ccd:ofDataSet osmt:highway-tertiary-point .
+
+osmt:highway-tertiary-point-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of highway tertiarypoint" ;
+    ccd:ofDataSet osmt:highway-tertiary-point .
+
+osmt:highway-tertiary-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway tertiarypoint" ;
+    ccd:ofDataSet osmt:highway-tertiary-point .
+
+osmt:highway-tertiary-point-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of highway tertiarypoint" ;
+    ccd:ofDataSet osmt:highway-tertiary-point .
+
+osmt:highway-tertiary-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway tertiaryregion" ;
+    ccd:ofDataSet osmt:highway-tertiary-region .
+
+osmt:highway-tertiary-region-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of highway tertiaryregion" ;
+    ccd:ofDataSet osmt:highway-tertiary-region .
+
+osmt:highway-tertiary-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway tertiaryregion" ;
+    ccd:ofDataSet osmt:highway-tertiary-region .
+
+osmt:highway-tertiary-region-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of highway tertiaryregion" ;
+    ccd:ofDataSet osmt:highway-tertiary-region .
+
+osmt:highway-unclassified-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway unclassifiedpoint" ;
+    ccd:ofDataSet osmt:highway-unclassified-point .
+
+osmt:highway-unclassified-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway unclassifiedpoint" ;
+    ccd:ofDataSet osmt:highway-unclassified-point .
+
+osmt:highway-unclassified-point-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of highway unclassifiedpoint" ;
+    ccd:ofDataSet osmt:highway-unclassified-point .
+
+osmt:highway-unclassified-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of highway unclassifiedregion" ;
+    ccd:ofDataSet osmt:highway-unclassified-region .
+
+osmt:highway-unclassified-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of highway unclassifiedregion" ;
+    ccd:ofDataSet osmt:highway-unclassified-region .
+
+osmt:highway-unclassified-region-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of highway unclassifiedregion" ;
+    ccd:ofDataSet osmt:highway-unclassified-region .
+
+osmt:landuse-farmland-point-landuse a ccd:PointMeasures ;
+    rdfs:label "OSM attribute landuse of landuse farmlandpoint" ;
+    ccd:ofDataSet osmt:landuse-farmland-point .
+
+osmt:landuse-farmland-point-ref a ccd:PointMeasures ;
+    rdfs:label "OSM attribute ref of landuse farmlandpoint" ;
+    ccd:ofDataSet osmt:landuse-farmland-point .
+
+osmt:landuse-farmland-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of landuse farmlandpoint" ;
+    ccd:ofDataSet osmt:landuse-farmland-point .
+
+osmt:landuse-farmland-point-type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute type of landuse farmlandpoint" ;
+    ccd:ofDataSet osmt:landuse-farmland-point .
+
+osmt:landuse-farmland-region-landuse a ccd:Coverage ;
+    rdfs:label "OSM attribute landuse of landuse farmlandregion" ;
+    ccd:ofDataSet osmt:landuse-farmland-region .
+
+osmt:landuse-farmland-region-ref a ccd:Coverage ;
+    rdfs:label "OSM attribute ref of landuse farmlandregion" ;
+    ccd:ofDataSet osmt:landuse-farmland-region .
+
+osmt:landuse-farmland-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of landuse farmlandregion" ;
+    ccd:ofDataSet osmt:landuse-farmland-region .
+
+osmt:landuse-farmland-region-type a ccd:Coverage ;
+    rdfs:label "OSM attribute type of landuse farmlandregion" ;
+    ccd:ofDataSet osmt:landuse-farmland-region .
+
+osmt:landuse-forest-point-landuse a ccd:PointMeasures ;
+    rdfs:label "OSM attribute landuse of landuse forestpoint" ;
+    ccd:ofDataSet osmt:landuse-forest-point .
+
+osmt:landuse-forest-point-leaf_type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute leaf_type of landuse forestpoint" ;
+    ccd:ofDataSet osmt:landuse-forest-point .
+
+osmt:landuse-forest-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of landuse forestpoint" ;
+    ccd:ofDataSet osmt:landuse-forest-point .
+
+osmt:landuse-forest-point-type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute type of landuse forestpoint" ;
+    ccd:ofDataSet osmt:landuse-forest-point .
+
+osmt:landuse-forest-region-landuse a ccd:Coverage ;
+    rdfs:label "OSM attribute landuse of landuse forestregion" ;
+    ccd:ofDataSet osmt:landuse-forest-region .
+
+osmt:landuse-forest-region-leaf_type a ccd:Coverage ;
+    rdfs:label "OSM attribute leaf_type of landuse forestregion" ;
+    ccd:ofDataSet osmt:landuse-forest-region .
+
+osmt:landuse-forest-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of landuse forestregion" ;
+    ccd:ofDataSet osmt:landuse-forest-region .
+
+osmt:landuse-forest-region-type a ccd:Coverage ;
+    rdfs:label "OSM attribute type of landuse forestregion" ;
+    ccd:ofDataSet osmt:landuse-forest-region .
+
+osmt:landuse-grass-point-golf a ccd:PointMeasures ;
+    rdfs:label "OSM attribute golf of landuse grasspoint" ;
+    ccd:ofDataSet osmt:landuse-grass-point .
+
+osmt:landuse-grass-point-landuse a ccd:PointMeasures ;
+    rdfs:label "OSM attribute landuse of landuse grasspoint" ;
+    ccd:ofDataSet osmt:landuse-grass-point .
+
+osmt:landuse-grass-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of landuse grasspoint" ;
+    ccd:ofDataSet osmt:landuse-grass-point .
+
+osmt:landuse-grass-point-type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute type of landuse grasspoint" ;
+    ccd:ofDataSet osmt:landuse-grass-point .
+
+osmt:landuse-grass-region-golf a ccd:Coverage ;
+    rdfs:label "OSM attribute golf of landuse grassregion" ;
+    ccd:ofDataSet osmt:landuse-grass-region .
+
+osmt:landuse-grass-region-landuse a ccd:Coverage ;
+    rdfs:label "OSM attribute landuse of landuse grassregion" ;
+    ccd:ofDataSet osmt:landuse-grass-region .
+
+osmt:landuse-grass-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of landuse grassregion" ;
+    ccd:ofDataSet osmt:landuse-grass-region .
+
+osmt:landuse-grass-region-type a ccd:Coverage ;
+    rdfs:label "OSM attribute type of landuse grassregion" ;
+    ccd:ofDataSet osmt:landuse-grass-region .
+
+osmt:landuse-meadow-point-landuse a ccd:PointMeasures ;
+    rdfs:label "OSM attribute landuse of landuse meadowpoint" ;
+    ccd:ofDataSet osmt:landuse-meadow-point .
+
+osmt:landuse-meadow-point-meadow a ccd:PointMeasures ;
+    rdfs:label "OSM attribute meadow of landuse meadowpoint" ;
+    ccd:ofDataSet osmt:landuse-meadow-point .
+
+osmt:landuse-meadow-point-ref a ccd:PointMeasures ;
+    rdfs:label "OSM attribute ref of landuse meadowpoint" ;
+    ccd:ofDataSet osmt:landuse-meadow-point .
+
+osmt:landuse-meadow-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of landuse meadowpoint" ;
+    ccd:ofDataSet osmt:landuse-meadow-point .
+
+osmt:landuse-meadow-region-landuse a ccd:Coverage ;
+    rdfs:label "OSM attribute landuse of landuse meadowregion" ;
+    ccd:ofDataSet osmt:landuse-meadow-region .
+
+osmt:landuse-meadow-region-meadow a ccd:Coverage ;
+    rdfs:label "OSM attribute meadow of landuse meadowregion" ;
+    ccd:ofDataSet osmt:landuse-meadow-region .
+
+osmt:landuse-meadow-region-ref a ccd:Coverage ;
+    rdfs:label "OSM attribute ref of landuse meadowregion" ;
+    ccd:ofDataSet osmt:landuse-meadow-region .
+
+osmt:landuse-meadow-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of landuse meadowregion" ;
+    ccd:ofDataSet osmt:landuse-meadow-region .
+
+osmt:landuse-residential-point-landuse a ccd:PointMeasures ;
+    rdfs:label "OSM attribute landuse of landuse residentialpoint" ;
+    ccd:ofDataSet osmt:landuse-residential-point .
+
+osmt:landuse-residential-point-name a ccd:ObjectVector,
+        ccd:PointMeasures ;
+    rdfs:label "OSM attribute name of landuse residentialpoint" ;
+    ccd:ofDataSet osmt:landuse-residential-point .
+
+osmt:landuse-residential-point-residential a ccd:ObjectVector,
+        ccd:PointMeasures ;
+    rdfs:label "OSM attribute residential of landuse residentialpoint" ;
+    ccd:ofDataSet osmt:landuse-residential-point .
+
+osmt:landuse-residential-point-source a ccd:ObjectVector,
+        ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of landuse residentialpoint" ;
+    ccd:ofDataSet osmt:landuse-residential-point .
+
+osmt:landuse-residential-region-landuse a ccd:Coverage ;
+    rdfs:label "OSM attribute landuse of landuse residentialregion" ;
+    ccd:ofDataSet osmt:landuse-residential-region .
+
+osmt:landuse-residential-region-name a ccd:Coverage,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of landuse residentialregion" ;
+    ccd:ofDataSet osmt:landuse-residential-region .
+
+osmt:landuse-residential-region-residential a ccd:Coverage,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute residential of landuse residentialregion" ;
+    ccd:ofDataSet osmt:landuse-residential-region .
+
+osmt:landuse-residential-region-source a ccd:Coverage,
+        ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of landuse residentialregion" ;
+    ccd:ofDataSet osmt:landuse-residential-region .
+
+osmt:lit-yes-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of lit yespoint" ;
+    ccd:ofDataSet osmt:lit-yes-point .
+
+osmt:lit-yes-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of lit yespoint" ;
+    ccd:ofDataSet osmt:lit-yes-point .
+
+osmt:lit-yes-point-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of lit yespoint" ;
+    ccd:ofDataSet osmt:lit-yes-point .
+
+osmt:lit-yes-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of lit yesregion" ;
+    ccd:ofDataSet osmt:lit-yes-region .
+
+osmt:lit-yes-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of lit yesregion" ;
+    ccd:ofDataSet osmt:lit-yes-region .
+
+osmt:lit-yes-region-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of lit yesregion" ;
+    ccd:ofDataSet osmt:lit-yes-region .
+
+osmt:natural-scrub-point-natural a ccd:PointMeasures ;
+    rdfs:label "OSM attribute natural of natural scrubpoint" ;
+    ccd:ofDataSet osmt:natural-scrub-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-point-raba:id> a ccd:PointMeasures ;
+    rdfs:label "OSM attribute raba:id of natural scrubpoint" ;
+    ccd:ofDataSet osmt:natural-scrub-point .
+
+osmt:natural-scrub-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of natural scrubpoint" ;
+    ccd:ofDataSet osmt:natural-scrub-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-point-source:date> a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source:date of natural scrubpoint" ;
+    ccd:ofDataSet osmt:natural-scrub-point .
+
+osmt:natural-scrub-region-natural a ccd:Coverage ;
+    rdfs:label "OSM attribute natural of natural scrubregion" ;
+    ccd:ofDataSet osmt:natural-scrub-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-region-raba:id> a ccd:Coverage ;
+    rdfs:label "OSM attribute raba:id of natural scrubregion" ;
+    ccd:ofDataSet osmt:natural-scrub-region .
+
+osmt:natural-scrub-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of natural scrubregion" ;
+    ccd:ofDataSet osmt:natural-scrub-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#natural-scrub-region-source:date> a ccd:Coverage ;
+    rdfs:label "OSM attribute source:date of natural scrubregion" ;
+    ccd:ofDataSet osmt:natural-scrub-region .
+
+osmt:natural-tree-point-leaf_type a ccd:ObjectVector ;
+    rdfs:label "OSM attribute leaf_type of natural treepoint" ;
+    ccd:ofDataSet osmt:natural-tree-point .
+
+osmt:natural-tree-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of natural treepoint" ;
+    ccd:ofDataSet osmt:natural-tree-point .
+
+osmt:natural-tree-point-species a ccd:ObjectVector ;
+    rdfs:label "OSM attribute species of natural treepoint" ;
+    ccd:ofDataSet osmt:natural-tree-point .
+
+osmt:natural-tree-region-leaf_type a ccd:ObjectVector ;
+    rdfs:label "OSM attribute leaf_type of natural treeregion" ;
+    ccd:ofDataSet osmt:natural-tree-region .
+
+osmt:natural-tree-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of natural treeregion" ;
+    ccd:ofDataSet osmt:natural-tree-region .
+
+osmt:natural-tree-region-species a ccd:ObjectVector ;
+    rdfs:label "OSM attribute species of natural treeregion" ;
+    ccd:ofDataSet osmt:natural-tree-region .
+
+osmt:natural-water-point-natural a ccd:PointMeasures ;
+    rdfs:label "OSM attribute natural of natural waterpoint" ;
+    ccd:ofDataSet osmt:natural-water-point .
+
+osmt:natural-water-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of natural waterpoint" ;
+    ccd:ofDataSet osmt:natural-water-point .
+
+osmt:natural-water-point-water a ccd:PointMeasures ;
+    rdfs:label "OSM attribute water of natural waterpoint" ;
+    ccd:ofDataSet osmt:natural-water-point .
+
+osmt:natural-water-region-natural a ccd:Coverage ;
+    rdfs:label "OSM attribute natural of natural waterregion" ;
+    ccd:ofDataSet osmt:natural-water-region .
+
+osmt:natural-water-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of natural waterregion" ;
+    ccd:ofDataSet osmt:natural-water-region .
+
+osmt:natural-water-region-water a ccd:Coverage ;
+    rdfs:label "OSM attribute water of natural waterregion" ;
+    ccd:ofDataSet osmt:natural-water-region .
+
+osmt:natural-wetland-point-natural a ccd:PointMeasures ;
+    rdfs:label "OSM attribute natural of natural wetlandpoint" ;
+    ccd:ofDataSet osmt:natural-wetland-point .
+
+osmt:natural-wetland-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of natural wetlandpoint" ;
+    ccd:ofDataSet osmt:natural-wetland-point .
+
+osmt:natural-wetland-point-type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute type of natural wetlandpoint" ;
+    ccd:ofDataSet osmt:natural-wetland-point .
+
+osmt:natural-wetland-point-wetland a ccd:PointMeasures ;
+    rdfs:label "OSM attribute wetland of natural wetlandpoint" ;
+    ccd:ofDataSet osmt:natural-wetland-point .
+
+osmt:natural-wetland-region-natural a ccd:Coverage ;
+    rdfs:label "OSM attribute natural of natural wetlandregion" ;
+    ccd:ofDataSet osmt:natural-wetland-region .
+
+osmt:natural-wetland-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of natural wetlandregion" ;
+    ccd:ofDataSet osmt:natural-wetland-region .
+
+osmt:natural-wetland-region-type a ccd:Coverage ;
+    rdfs:label "OSM attribute type of natural wetlandregion" ;
+    ccd:ofDataSet osmt:natural-wetland-region .
+
+osmt:natural-wetland-region-wetland a ccd:Coverage ;
+    rdfs:label "OSM attribute wetland of natural wetlandregion" ;
+    ccd:ofDataSet osmt:natural-wetland-region .
+
+osmt:natural-wood-point-leaf_type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute leaf_type of natural woodpoint" ;
+    ccd:ofDataSet osmt:natural-wood-point .
+
+osmt:natural-wood-point-natural a ccd:PointMeasures ;
+    rdfs:label "OSM attribute natural of natural woodpoint" ;
+    ccd:ofDataSet osmt:natural-wood-point .
+
+osmt:natural-wood-point-source a ccd:PointMeasures ;
+    rdfs:label "OSM attribute source of natural woodpoint" ;
+    ccd:ofDataSet osmt:natural-wood-point .
+
+osmt:natural-wood-point-type a ccd:PointMeasures ;
+    rdfs:label "OSM attribute type of natural woodpoint" ;
+    ccd:ofDataSet osmt:natural-wood-point .
+
+osmt:natural-wood-region-leaf_type a ccd:Coverage ;
+    rdfs:label "OSM attribute leaf_type of natural woodregion" ;
+    ccd:ofDataSet osmt:natural-wood-region .
+
+osmt:natural-wood-region-natural a ccd:Coverage ;
+    rdfs:label "OSM attribute natural of natural woodregion" ;
+    ccd:ofDataSet osmt:natural-wood-region .
+
+osmt:natural-wood-region-source a ccd:Coverage ;
+    rdfs:label "OSM attribute source of natural woodregion" ;
+    ccd:ofDataSet osmt:natural-wood-region .
+
+osmt:natural-wood-region-type a ccd:Coverage ;
+    rdfs:label "OSM attribute type of natural woodregion" ;
+    ccd:ofDataSet osmt:natural-wood-region .
+
+osmt:oneway-no-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of oneway nopoint" ;
+    ccd:ofDataSet osmt:oneway-no-point .
+
+osmt:oneway-no-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of oneway nopoint" ;
+    ccd:ofDataSet osmt:oneway-no-point .
+
+osmt:oneway-no-point-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of oneway nopoint" ;
+    ccd:ofDataSet osmt:oneway-no-point .
+
+osmt:oneway-no-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of oneway noregion" ;
+    ccd:ofDataSet osmt:oneway-no-region .
+
+osmt:oneway-no-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of oneway noregion" ;
+    ccd:ofDataSet osmt:oneway-no-region .
+
+osmt:oneway-no-region-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of oneway noregion" ;
+    ccd:ofDataSet osmt:oneway-no-region .
+
+osmt:oneway-yes-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of oneway yespoint" ;
+    ccd:ofDataSet osmt:oneway-yes-point .
+
+osmt:oneway-yes-point-lanes a ccd:ObjectVector ;
+    rdfs:label "OSM attribute lanes of oneway yespoint" ;
+    ccd:ofDataSet osmt:oneway-yes-point .
+
+osmt:oneway-yes-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of oneway yespoint" ;
+    ccd:ofDataSet osmt:oneway-yes-point .
+
+osmt:oneway-yes-point-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of oneway yespoint" ;
+    ccd:ofDataSet osmt:oneway-yes-point .
+
+osmt:oneway-yes-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of oneway yesregion" ;
+    ccd:ofDataSet osmt:oneway-yes-region .
+
+osmt:oneway-yes-region-lanes a ccd:ObjectVector ;
+    rdfs:label "OSM attribute lanes of oneway yesregion" ;
+    ccd:ofDataSet osmt:oneway-yes-region .
+
+osmt:oneway-yes-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of oneway yesregion" ;
+    ccd:ofDataSet osmt:oneway-yes-region .
+
+osmt:oneway-yes-region-surface a ccd:ObjectVector ;
+    rdfs:label "OSM attribute surface of oneway yesregion" ;
+    ccd:ofDataSet osmt:oneway-yes-region .
+
+osmt:power-pole-point-material a ccd:ObjectVector ;
+    rdfs:label "OSM attribute material of power polepoint" ;
+    ccd:ofDataSet osmt:power-pole-point .
+
+osmt:power-pole-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of power polepoint" ;
+    ccd:ofDataSet osmt:power-pole-point .
+
+osmt:power-tower-point-design a ccd:ObjectVector ;
+    rdfs:label "OSM attribute design of power towerpoint" ;
+    ccd:ofDataSet osmt:power-tower-point .
+
+osmt:power-tower-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of power towerpoint" ;
+    ccd:ofDataSet osmt:power-tower-point .
+
+osmt:power-tower-region-design a ccd:ObjectVector ;
+    rdfs:label "OSM attribute design of power towerregion" ;
+    ccd:ofDataSet osmt:power-tower-region .
+
+osmt:power-tower-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of power towerregion" ;
+    ccd:ofDataSet osmt:power-tower-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#source-survey-point-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of source surveypoint" ;
+    ccd:ofDataSet osmt:source-survey-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#source-survey-point-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of source surveypoint" ;
+    ccd:ofDataSet osmt:source-survey-point .
+
+osmt:source-survey-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of source surveypoint" ;
+    ccd:ofDataSet osmt:source-survey-point .
+
+osmt:source-survey-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of source surveypoint" ;
+    ccd:ofDataSet osmt:source-survey-point .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#source-survey-region-addr:housenumber> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:housenumber of source surveyregion" ;
+    ccd:ofDataSet osmt:source-survey-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#source-survey-region-addr:street> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute addr:street of source surveyregion" ;
+    ccd:ofDataSet osmt:source-survey-region .
+
+osmt:source-survey-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of source surveyregion" ;
+    ccd:ofDataSet osmt:source-survey-region .
+
+osmt:source-survey-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of source surveyregion" ;
+    ccd:ofDataSet osmt:source-survey-region .
+
+osmt:surface-asphalt-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of surface asphaltpoint" ;
+    ccd:ofDataSet osmt:surface-asphalt-point .
+
+osmt:surface-asphalt-point-lanes a ccd:ObjectVector ;
+    rdfs:label "OSM attribute lanes of surface asphaltpoint" ;
+    ccd:ofDataSet osmt:surface-asphalt-point .
+
+osmt:surface-asphalt-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of surface asphaltpoint" ;
+    ccd:ofDataSet osmt:surface-asphalt-point .
+
+osmt:surface-asphalt-point-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of surface asphaltpoint" ;
+    ccd:ofDataSet osmt:surface-asphalt-point .
+
+osmt:surface-asphalt-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of surface asphaltregion" ;
+    ccd:ofDataSet osmt:surface-asphalt-region .
+
+osmt:surface-asphalt-region-lanes a ccd:ObjectVector ;
+    rdfs:label "OSM attribute lanes of surface asphaltregion" ;
+    ccd:ofDataSet osmt:surface-asphalt-region .
+
+osmt:surface-asphalt-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of surface asphaltregion" ;
+    ccd:ofDataSet osmt:surface-asphalt-region .
+
+osmt:surface-asphalt-region-oneway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute oneway of surface asphaltregion" ;
+    ccd:ofDataSet osmt:surface-asphalt-region .
+
+osmt:surface-paved-point-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of surface pavedpoint" ;
+    ccd:ofDataSet osmt:surface-paved-point .
+
+osmt:surface-paved-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of surface pavedpoint" ;
+    ccd:ofDataSet osmt:surface-paved-point .
+
+osmt:surface-paved-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of surface pavedpoint" ;
+    ccd:ofDataSet osmt:surface-paved-point .
+
+osmt:surface-paved-region-highway a ccd:ObjectVector ;
+    rdfs:label "OSM attribute highway of surface pavedregion" ;
+    ccd:ofDataSet osmt:surface-paved-region .
+
+osmt:surface-paved-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of surface pavedregion" ;
+    ccd:ofDataSet osmt:surface-paved-region .
+
+osmt:surface-paved-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of surface pavedregion" ;
+    ccd:ofDataSet osmt:surface-paved-region .
+
+<https://questionbasedanalysis.com/OSMTypes.rdf#waterway-ditch-region-mml:class> a ccd:ObjectVector ;
+    rdfs:label "OSM attribute mml:class of waterway ditchregion" ;
+    ccd:ofDataSet osmt:waterway-ditch-region .
+
+osmt:waterway-ditch-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of waterway ditchregion" ;
+    ccd:ofDataSet osmt:waterway-ditch-region .
+
+osmt:waterway-ditch-region-tunnel a ccd:ObjectVector ;
+    rdfs:label "OSM attribute tunnel of waterway ditchregion" ;
+    ccd:ofDataSet osmt:waterway-ditch-region .
+
+osmt:waterway-stream-point-intermittent a ccd:ObjectVector ;
+    rdfs:label "OSM attribute intermittent of waterway streampoint" ;
+    ccd:ofDataSet osmt:waterway-stream-point .
+
+osmt:waterway-stream-point-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of waterway streampoint" ;
+    ccd:ofDataSet osmt:waterway-stream-point .
+
+osmt:waterway-stream-point-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of waterway streampoint" ;
+    ccd:ofDataSet osmt:waterway-stream-point .
+
+osmt:waterway-stream-region-intermittent a ccd:ObjectVector ;
+    rdfs:label "OSM attribute intermittent of waterway streamregion" ;
+    ccd:ofDataSet osmt:waterway-stream-region .
+
+osmt:waterway-stream-region-name a ccd:ObjectVector ;
+    rdfs:label "OSM attribute name of waterway streamregion" ;
+    ccd:ofDataSet osmt:waterway-stream-region .
+
+osmt:waterway-stream-region-source a ccd:ObjectVector ;
+    rdfs:label "OSM attribute source of waterway streamregion" ;
+    ccd:ofDataSet osmt:waterway-stream-region .
+
+osmt:amenity rdfs:label "OSM type amenity" .
+
+osmt:boundary rdfs:label "OSM type boundary" .
+
+osmt:bridge rdfs:label "OSM type bridge" .
+
+osmt:lit rdfs:label "OSM type lit" .
+
+osmt:source rdfs:label "OSM type source" .
+
+osmt:barrier-wall-point a ccd:PointDataSet,
+        osmt:barrier-wall ;
+    rdfs:label "OSM data set barrier wall point" .
+
+osmt:barrier-wall-region a ccd:RegionDataSet,
+        osmt:barrier-wall ;
+    rdfs:label "OSM data set barrier wall region" .
+
+osmt:oneway rdfs:label "OSM type oneway" .
+
+osmt:power rdfs:label "OSM type power" .
+
+osmt:power-pole-point a ccd:PointDataSet,
+        osmt:power-pole ;
+    rdfs:label "OSM data set power pole point" .
+
+osmt:power-tower-point a ccd:PointDataSet,
+        osmt:power-tower ;
+    rdfs:label "OSM data set power tower point" .
+
+osmt:power-tower-region a ccd:RegionDataSet,
+        osmt:power-tower ;
+    rdfs:label "OSM data set power tower region" .
+
+osmt:surface rdfs:label "OSM type surface" .
+
+osmt:waterway rdfs:label "OSM type waterway" .
+
+osmt:amenity-parking-point a ccd:PointDataSet,
+        osmt:amenity-parking ;
+    rdfs:label "OSM data set amenity parking point" .
+
+osmt:amenity-parking-region a ccd:RegionDataSet,
+        osmt:amenity-parking ;
+    rdfs:label "OSM data set amenity parking region" .
+
+osmt:barrier rdfs:label "OSM type barrier" .
+
+osmt:barrier-fence-point a ccd:PointDataSet,
+        osmt:barrier-fence ;
+    rdfs:label "OSM data set barrier fence point" .
+
+osmt:barrier-fence-region a ccd:RegionDataSet,
+        osmt:barrier-fence ;
+    rdfs:label "OSM data set barrier fence region" .
+
+osmt:barrier-gate-point a ccd:PointDataSet,
+        osmt:barrier-gate ;
+    rdfs:label "OSM data set barrier gate point" .
+
+osmt:barrier-gate-region a ccd:RegionDataSet,
+        osmt:barrier-gate ;
+    rdfs:label "OSM data set barrier gate region" .
+
+osmt:boundary-administrative-point a ccd:PointDataSet,
+        osmt:boundary-administrative ;
+    rdfs:label "OSM data set boundary administrative point" .
+
+osmt:boundary-administrative-region a ccd:RegionDataSet,
+        osmt:boundary-administrative ;
+    rdfs:label "OSM data set boundary administrative region" .
+
+osmt:building-garage-point a ccd:PointDataSet,
+        osmt:building-garage ;
+    rdfs:label "OSM data set building garage point" .
+
+osmt:building-garage-region a ccd:RegionDataSet,
+        osmt:building-garage ;
+    rdfs:label "OSM data set building garage region" .
+
+osmt:highway-bus_stop-point a ccd:PointDataSet,
+        osmt:highway-bus_stop ;
+    rdfs:label "OSM data set highway bus stop point" .
+
+osmt:highway-bus_stop-region a ccd:RegionDataSet,
+        osmt:highway-bus_stop ;
+    rdfs:label "OSM data set highway bus stop region" .
+
+osmt:highway-unclassified-point a ccd:PointDataSet,
+        osmt:highway-unclassified ;
+    rdfs:label "OSM data set highway unclassified point" .
+
+osmt:highway-unclassified-region a ccd:RegionDataSet,
+        osmt:highway-unclassified ;
+    rdfs:label "OSM data set highway unclassified region" .
+
+osmt:lit-yes-point a ccd:PointDataSet,
+        osmt:lit-yes ;
+    rdfs:label "OSM data set lit yes point" .
+
+osmt:lit-yes-region a ccd:RegionDataSet,
+        osmt:lit-yes ;
+    rdfs:label "OSM data set lit yes region" .
+
+osmt:natural-tree-point a ccd:PointDataSet,
+        osmt:natural-tree ;
+    rdfs:label "OSM data set natural tree point" .
+
+osmt:natural-tree-region a ccd:RegionDataSet,
+        osmt:natural-tree ;
+    rdfs:label "OSM data set natural tree region" .
+
+osmt:natural-water-point a ccd:PointDataSet,
+        osmt:natural-water ;
+    rdfs:label "OSM data set natural water point" .
+
+osmt:natural-water-region a ccd:RegionDataSet,
+        osmt:natural-water ;
+    rdfs:label "OSM data set natural water region" .
+
+osmt:oneway-no-point a ccd:PointDataSet,
+        osmt:oneway-no ;
+    rdfs:label "OSM data set oneway no point" .
+
+osmt:oneway-no-region a ccd:RegionDataSet,
+        osmt:oneway-no ;
+    rdfs:label "OSM data set oneway no region" .
+
+osmt:surface-paved-point a ccd:PointDataSet,
+        osmt:surface-paved ;
+    rdfs:label "OSM data set surface paved point" .
+
+osmt:surface-paved-region a ccd:RegionDataSet,
+        osmt:surface-paved ;
+    rdfs:label "OSM data set surface paved region" .
+
+osmt:waterway-ditch-region a ccd:RegionDataSet,
+        osmt:waterway-ditch ;
+    rdfs:label "OSM data set waterway ditch region" .
+
+osmt:waterway-stream-point a ccd:PointDataSet,
+        osmt:waterway-stream ;
+    rdfs:label "OSM data set waterway stream point" .
+
+osmt:waterway-stream-region a ccd:RegionDataSet,
+        osmt:waterway-stream ;
+    rdfs:label "OSM data set waterway stream region" .
+
+osmt:bridge-yes-point a ccd:PointDataSet,
+        osmt:bridge-yes ;
+    rdfs:label "OSM data set bridge yes point" .
+
+osmt:bridge-yes-region a ccd:RegionDataSet,
+        osmt:bridge-yes ;
+    rdfs:label "OSM data set bridge yes region" .
+
+osmt:building-apartments-point a ccd:PointDataSet,
+        osmt:building-apartments ;
+    rdfs:label "OSM data set building apartments point" .
+
+osmt:building-apartments-region a ccd:RegionDataSet,
+        osmt:building-apartments ;
+    rdfs:label "OSM data set building apartments region" .
+
+osmt:building-detached-point a ccd:PointDataSet,
+        osmt:building-detached ;
+    rdfs:label "OSM data set building detached point" .
+
+osmt:building-detached-region a ccd:RegionDataSet,
+        osmt:building-detached ;
+    rdfs:label "OSM data set building detached region" .
+
+osmt:building-house-point a ccd:PointDataSet,
+        osmt:building-house ;
+    rdfs:label "OSM data set building house point" .
+
+osmt:building-house-region a ccd:RegionDataSet,
+        osmt:building-house ;
+    rdfs:label "OSM data set building house region" .
+
+osmt:building-residential-point a ccd:PointDataSet,
+        osmt:building-residential ;
+    rdfs:label "OSM data set building residential point" .
+
+osmt:building-residential-region a ccd:RegionDataSet,
+        osmt:building-residential ;
+    rdfs:label "OSM data set building residential region" .
+
+osmt:building-yes-point a ccd:PointDataSet,
+        osmt:building-yes ;
+    rdfs:label "OSM data set building yes point" .
+
+osmt:building-yes-region a ccd:RegionDataSet,
+        osmt:building-yes ;
+    rdfs:label "OSM data set building yes region" .
+
+osmt:highway-primary-region a ccd:RegionDataSet,
+        osmt:highway-primary ;
+    rdfs:label "OSM data set highway primary region" .
+
+osmt:highway-residential-line a ccd:LineDataSet,
+        osmt:highway-residential ;
+    rdfs:label "OSM data set highway residential line" .
+
+osmt:highway-residential-point a ccd:PointDataSet,
+        osmt:highway-residential ;
+    rdfs:label "OSM data set highway residential point" .
+
+osmt:highway-residential-region a ccd:PointDataSet,
+        ccd:RegionDataSet,
+        osmt:highway-residential ;
+    rdfs:label "OSM data set highway residential region" .
+
+osmt:highway-secondary-point a ccd:PointDataSet,
+        osmt:highway-secondary ;
+    rdfs:label "OSM data set highway secondary point" .
+
+osmt:highway-secondary-region a ccd:RegionDataSet,
+        osmt:highway-secondary ;
+    rdfs:label "OSM data set highway secondary region" .
+
+osmt:highway-tertiary-point a ccd:PointDataSet,
+        osmt:highway-tertiary ;
+    rdfs:label "OSM data set highway tertiary point" .
+
+osmt:highway-tertiary-region a ccd:RegionDataSet,
+        osmt:highway-tertiary ;
+    rdfs:label "OSM data set highway tertiary region" .
+
+osmt:landuse-farmland-point a ccd:PointDataSet,
+        osmt:landuse-farmland ;
+    rdfs:label "OSM data set landuse farmland point" .
+
+osmt:landuse-farmland-region a ccd:RegionDataSet,
+        osmt:landuse-farmland ;
+    rdfs:label "OSM data set landuse farmland region" .
+
+osmt:landuse-forest-point a ccd:PointDataSet,
+        osmt:landuse-forest ;
+    rdfs:label "OSM data set landuse forest point" .
+
+osmt:landuse-forest-region a ccd:RegionDataSet,
+        osmt:landuse-forest ;
+    rdfs:label "OSM data set landuse forest region" .
+
+osmt:landuse-grass-point a ccd:PointDataSet,
+        osmt:landuse-grass ;
+    rdfs:label "OSM data set landuse grass point" .
+
+osmt:landuse-grass-region a ccd:RegionDataSet,
+        osmt:landuse-grass ;
+    rdfs:label "OSM data set landuse grass region" .
+
+osmt:landuse-meadow-point a ccd:PointDataSet,
+        osmt:landuse-meadow ;
+    rdfs:label "OSM data set landuse meadow point" .
+
+osmt:landuse-meadow-region a ccd:RegionDataSet,
+        osmt:landuse-meadow ;
+    rdfs:label "OSM data set landuse meadow region" .
+
+osmt:landuse-residential-point a ccd:PointDataSet,
+        osmt:landuse-residential ;
+    rdfs:label "OSM data set landuse residential point" .
+
+osmt:landuse-residential-region a ccd:RegionDataSet,
+        osmt:landuse-residential ;
+    rdfs:label "OSM data set landuse residential region" .
+
+osmt:natural-scrub-point a ccd:PointDataSet,
+        osmt:natural-scrub ;
+    rdfs:label "OSM data set natural scrub point" .
+
+osmt:natural-scrub-region a ccd:RegionDataSet,
+        osmt:natural-scrub ;
+    rdfs:label "OSM data set natural scrub region" .
+
+osmt:natural-wetland-point a ccd:PointDataSet,
+        osmt:natural-wetland ;
+    rdfs:label "OSM data set natural wetland point" .
+
+osmt:natural-wetland-region a ccd:RegionDataSet,
+        osmt:natural-wetland ;
+    rdfs:label "OSM data set natural wetland region" .
+
+osmt:natural-wood-point a ccd:PointDataSet,
+        osmt:natural-wood ;
+    rdfs:label "OSM data set natural wood point" .
+
+osmt:natural-wood-region a ccd:RegionDataSet,
+        osmt:natural-wood ;
+    rdfs:label "OSM data set natural wood region" .
+
+osmt:oneway-yes-point a ccd:PointDataSet,
+        osmt:oneway-yes ;
+    rdfs:label "OSM data set oneway yes point" .
+
+osmt:oneway-yes-region a ccd:RegionDataSet,
+        osmt:oneway-yes ;
+    rdfs:label "OSM data set oneway yes region" .
+
+osmt:source-survey-point a ccd:PointDataSet,
+        osmt:source-survey ;
+    rdfs:label "OSM data set source survey point" .
+
+osmt:source-survey-region a ccd:RegionDataSet,
+        osmt:source-survey ;
+    rdfs:label "OSM data set source survey region" .
+
+osmt:surface-asphalt-point a ccd:PointDataSet,
+        osmt:surface-asphalt ;
+    rdfs:label "OSM data set surface asphalt point" .
+
+osmt:surface-asphalt-region a ccd:RegionDataSet,
+        osmt:surface-asphalt ;
+    rdfs:label "OSM data set surface asphalt region" .
+
+osmt:landuse rdfs:label "OSM type landuse" .
+
+osmt:natural rdfs:label "OSM type natural" .
+
+osmt:building rdfs:label "OSM type building" .
+
+osmt:highway rdfs:label "OSM type highway" .
 
